@@ -986,7 +986,107 @@ line-height:50px;
 
 /* Custom NCC CSS Starts here */
 
-.okb-document-header {
-    background-color: rgb(14,20,76);
-    color: white;
+.okb-document {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
+
+.okb-document * {
+    font-family: "Open Sans";
+}
+
+.okb-document-header {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(14, 20, 76);
+    color: #fff;
+}
+
+.okb-document-title {
+    text-transform: uppercase;
+    font-size: xx-large;
+    color: inherit;
+    margin: .2em auto .2em auto
+}
+
+.okb-document-headline {
+    text-transform: capitalize;
+    font-size: medium;
+    color: inherit;
+    margin: .2em auto .1em auto
+}
+
+.okb-document-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.okb-document-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.75em;
+}
+
+.okb-document-section hr {
+    margin-top: .25em;
+}
+
+.okb-document-section-content {
+
+}
+
+.okb-document-section-title {
+    font-size: x-large;
+    text-transform: uppercase;
+}
+
+.okb-document-subsection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5em;
+}
+
+.okb-document-subsection p, .okb-document-subsection li {
+    font-size: medium;
+    list-style-type: square;
+}
+
+.okb-document-subsection li, .okb-document-section-content li {
+    list-style-type: square;
+}
+
+.okb-document-subsection-title{
+    font-size: large;
+    text-transform: capitalize;
+    margin-top: .25em;
+}
+
+.okb-document-subsection-content {
+    display: flex;
+}
+
+.okb-document-subsection-content-right-sidebar {
+    float: right;
+    width: 22em;
+    margin-left: 1.5em;
+}
+
+.okb-document-subsection-content-right-sidebar img {
+    margin: .1em auto;
+}
+
+.okb-document-subsection-content-right-sidebar:first-child {
+    margin-top: 0em;
+}
+
+.okb-document-subsection-content-right-sidebar:last-child {
+    margin-bottom: 0em;
+}
+
+.okb-document-topic-response {
+    margin-top: 1em;
+    font-size: small;
+}
+
