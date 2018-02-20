@@ -986,6 +986,7 @@ line-height:50px;
 
 /* Custom NCC CSS Starts here */
 
-div.okb-document-subsection img:nth-child(1) {
-    position: absolute;
+.okb-document-header {
+    background-color: rgb(14,20,76);
+    color: white;
 }
