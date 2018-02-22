@@ -1011,6 +1011,11 @@ line-height:50px;
     font-weight: normal;
 }
 
+.okb-document hr {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
 .okb-document-header
 , .okb-document-section {
     margin: 0 3em;
@@ -1037,14 +1042,29 @@ line-height:50px;
 
 .okb-document-header
 , .okb-document-section {
-    padding-top: 2.25em;
-    padding-bottom: 2.25em;
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
 }
 
 .okb-document-body {
     display: flex;
     flex-direction: column;
     justify-content: start;
+}
+
+.okb-document ul {
+    padding-left: 2em;
+    margin-top: 1em;
+}
+
+.okb-document li {
+    list-style-type: disc;
+    padding-left: .5em;
+    margin-bottom: 1em;
+}
+
+.okb-document li:last-child {
+    margin-bottom: 0em;
 }
 
 .okb-document-section {
@@ -1070,151 +1090,54 @@ line-height:50px;
     margin-bottom: 1.5em;
 }
 
+.okb-document-subsection:last-child {    
+    margin-bottom: 0em;
+}
+
 .okb-document-subsection p, .okb-document-subsection li {
-    font-size: medium;
+    font-size: 1em;
 }
 
 .okb-document-subsection-title {
-    font-size: 1.4em;
+    font-size: 1.25em;
     margin-bottom: .83em;
 }
 
 .okb-document-subsection-content-right-sidebar {
     float: right;
-    width: 22em;
-    margin-left: 1.5em;
+    margin-left: .75em;
+    background-color: rgb(246,246,246);
+    max-width: 15em;
+    padding: 1.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.okb-document-subsection-content-right-sidebar > div 
+, .okb-document-subsection-content-right-sidebar > img 
+, .okb-document-subsection-content-right-sidebar > a {
+    margin-top: .2em;
+    margin-bottom: .2em;
 }
 
 .okb-document-subsection-content-right-sidebar img {
-    margin: .1em auto;
+    max-width: 100%;
 }
 
-.okb-document-subsection-content-right-sidebar:first-child {
+.okb-document-subsection-content-right-sidebar p {
+    font-size: .8em;
+    margin-bottom: .3em;
     margin-top: 0em;
 }
 
-.okb-document-subsection-content-right-sidebar:last-child {
-    margin-bottom: 0em;
+.okb-document-topic {    
+    margin-bottom: 1.25em;    
 }
 
 .okb-document-topic-response {
-    margin-top: 1em;
-    font-size: small;
-}
-/* 
-@media only screen and (min-device-width : 320px) and (max-device-width : 1024px) {
-    
-    
-} */
-/* 
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-
-.hiq-t .okb-document {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    margin-top: .5em;    
+    margin-bottom: .5em;    
+    font-size: .75em;
 }
 
-.hiq-t .okb-document * {
-    font-family: "Open Sans";
-}
-
-.hiq-t .okb-document-header {
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(14, 20, 76);
-    color: #fff;
-}
-
-.hiq-t .okb-document-title {
-    text-transform: uppercase;
-    font-size: xx-large;
-    color: inherit;
-    margin: .2em auto .2em auto
-}
-
-.hiq-t .okb-document-headline {
-    text-transform: capitalize;
-    font-size: medium;
-    color: inherit;
-    margin: .2em auto .1em auto
-}
-
-.hiq-t .okb-document-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-}
-
-.hiq-t .okb-document-section {
-    display: flex;
-    flex-direction: column;
-    margin-top: 1.75em;
-}
-
-.hiq-t .okb-document-section hr {
-    margin-top: .25em;
-}
-
-.hiq-t .okb-document-section-content {
-
-}
-
-.hiq-t .okb-document-section-title {
-    font-size: x-large;
-    text-transform: uppercase;
-    color: black;
-}
-
-.hiq-t .okb-document-subsection {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5em;
-}
-
-.hiq-t .okb-document-subsection p, .okb-document-subsection li {
-    font-size: medium;
-    list-style-type: square;
-}
-
-.hiq-t .okb-document-subsection li, .okb-document-section-content li {
-    list-style-type: square;
-}
-
-.hiq-t .okb-document-subsection-title{
-    font-size: large;
-    text-transform: capitalize;
-    margin-top: .25em;
-}
-
-.hiq-t .okb-document-subsection-content {
-    display: flex;
-}
-
-.hiq-t .okb-document-subsection-content-right-sidebar {
-    float: right;
-    width: 22em;
-    margin-left: 1.5em;
-}
-
-.hiq-t .okb-document-subsection-content-right-sidebar img {
-    margin: .1em auto;
-}
-
-.hiq-t .okb-document-subsection-content-right-sidebar:first-child {
-    margin-top: 0em;
-}
-
-.hiq-t .okb-document-subsection-content-right-sidebar:last-child {
-    margin-bottom: 0em;
-}
-
-.hiq-t .okb-document-topic-response {
-    margin-top: 1em;
-    font-size: small;
-}
-}
-
- */
