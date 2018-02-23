@@ -1033,6 +1033,11 @@ line-height:50px;
     line-height: 1;
 }
 
+.ncc-article-title span.ncc-version {
+    color: red;
+    font-size: .5em;
+}
+
 .ncc-article-headline {    
     font-size: .875em;
 }
@@ -1072,7 +1077,7 @@ line-height:50px;
 
 .ncc-article-section-title {
     font-size: 1.67em;
-    margin-bottom: .63em;
+    margin-bottom: .3em;
 }
 
 .ncc-article-section-content {
@@ -1091,7 +1096,7 @@ line-height:50px;
 
 .ncc-article-subsection-title {
     font-size: 1.25em;
-    margin-bottom: .83em;
+    margin-bottom: .375em;
 }
 
 .ncc-article-subsection-content-images-column {
