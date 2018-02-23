@@ -998,7 +998,7 @@ line-height:50px;
 .ncc-article *
    {
     font-family: "Noto Sans", sans-serif;
-    line-height: 1.8;
+    line-height: 1.25;
 }
 
 .ncc-article h1
@@ -1029,13 +1029,11 @@ line-height:50px;
 }
 
 .ncc-article-title {
-    font-size: 2.2em;
-    margin-bottom: .67em;
+    font-size: 2em;
 }
 
 .ncc-article-headline {    
-    font-size: 1em;
-    color: inherit;
+    font-size: .875em;
 }
 
 .ncc-article-header
@@ -1052,7 +1050,7 @@ line-height:50px;
 
 .ncc-article ul {
     padding-left: 2em;
-    margin-top: 1em;
+    margin-top: 0em;
 }
 
 .ncc-article li {
@@ -1068,7 +1066,7 @@ line-height:50px;
 .ncc-article-section {
     display: flex;
     flex-direction: column;
-    font-size: 1em;
+    font-size: .875em;
 }
 
 .ncc-article-section-title {
@@ -1084,15 +1082,11 @@ line-height:50px;
 .ncc-article-subsection {
     display: flex;
     flex-direction: column;
-    margin-bottom: 1.5em;
+    margin-bottom: 2.25em;
 }
 
 .ncc-article-subsection:last-child {    
     margin-bottom: 0em;
-}
-
-.ncc-article-subsection p, .ncc-article-subsection li {
-    font-size: 1em;
 }
 
 .ncc-article-subsection-title {
@@ -1100,32 +1094,47 @@ line-height:50px;
     margin-bottom: .83em;
 }
 
-.ncc-article-subsection-content-right-sidebar {
+.ncc-article-subsection-content-images-column {
     float: right;
     margin-left: .75em;
-    background-color: rgb(246,246,246);
-    max-width: 15em;
-    padding: 1.5em;
+    background-color: rgb(246,246,246);    
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.ncc-article-subsection-content-right-sidebar > div 
-, .ncc-article-subsection-content-right-sidebar > img 
-, .ncc-article-subsection-content-right-sidebar > a {
-    margin-top: .2em;
-    margin-bottom: .2em;
+.ncc-article-image {
+    max-width: 15em;
+    margin: .6em;
 }
 
-.ncc-article-subsection-content-right-sidebar img {
+.ncc-article-image img {
     max-width: 100%;
 }
 
-.ncc-article-subsection-content-right-sidebar p {
+.ncc-article-image p {
     font-size: .8em;
     margin-bottom: .3em;
     margin-top: 0em;
+}
+
+.ncc-article-subsection-content-alt {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.ncc-article-subsection-content-alt .ncc-article-subsection-content-images-row {
+    align-self: flex-start;    
+}
+
+.ncc-article-subsection-content-images-row {
+    margin-top: .75em;
+    background-color: rgb(246,246,246);    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .ncc-article-topic {    
