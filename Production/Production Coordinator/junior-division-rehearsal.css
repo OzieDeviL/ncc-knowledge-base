@@ -998,7 +998,7 @@ line-height:50px;
 .ncc-article *
    {
     font-family: "Noto Sans", sans-serif;
-    line-height: 1.25;
+    line-height: 1.8;
 }
 
 .ncc-article h1
@@ -1030,6 +1030,7 @@ line-height:50px;
 
 .ncc-article-title {
     font-size: 2em;
+    line-height: 1;
 }
 
 .ncc-article-headline {    
@@ -1056,7 +1057,7 @@ line-height:50px;
 .ncc-article li {
     list-style-type: disc;
     padding-left: .5em;
-    margin-bottom: 1em;
+    margin-bottom: .7em;
 }
 
 .ncc-article li:last-child {
@@ -1071,8 +1072,7 @@ line-height:50px;
 
 .ncc-article-section-title {
     font-size: 1.67em;
-    margin-bottom: .5em;
-    color: black;
+    margin-bottom: .63em;
 }
 
 .ncc-article-section-content {
