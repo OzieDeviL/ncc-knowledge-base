@@ -1061,6 +1061,16 @@ body {
         padding-left: 2em;
         margin-top: 0em;
     }
+
+    .ncc-article p + p 
+    , .ncc-aprticle p + .ncc-article-p-img-side-by-side
+    , .ncc-aprticle .ncc-article-p-img-side-by-side + .ncc-article-p-img-side-by-side {
+        margin-top: .25em;
+}
+    .ncc-article p + ul 
+    , .ncc-article li > ul {        
+        margin-top: .75em;
+    }
     
     .ncc-article li {
         list-style-type: disc;
@@ -1105,6 +1115,32 @@ body {
         font-size: 1.25em;
         margin-bottom: .375em;
     }
+
+    .ncc-article-p-img-side-by-side {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        max-width: 100%;
+    }
+
+    .ncc-article-p-img-side-by-side.ncc-flop {                   
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+
+    .ncc-article-p-img-side-by-side > img {
+        margin-top: .5em;
+        margin-right: .75em;
+        max-height: 15em;
+    }
+
+    .ncc-article-p-img-side-by-side.ncc-flop > img {           
+        margin-left: .75em;
+        margin-right: 0em;
+        width: 30em;
+    }
     
     .ncc-article-subsection-content-images-column {
         float: right;
@@ -1115,16 +1151,16 @@ body {
         justify-content: space-between;
     }
     
-    .ncc-article-image {
+     .ncc-article-image-caption {
         max-width: 15em;
-        margin: .6em;
+        margin: .6em;        
     }
     
-    .ncc-article-image img {
-        max-width: 100%;
+     .ncc-article-image-row img {
+        object-fit: cover;
     }
-    
-    .ncc-article-image p {
+
+     .ncc-article-image-caption p {
         font-size: .8em;
         margin-bottom: .3em;
         margin-top: 0em;
@@ -1148,6 +1184,10 @@ body {
         flex-wrap: wrap;
         justify-content: space-between;
     }
+
+    .ncc-article-subsection-content-images-row:after {
+        flex-grow: 1;
+    }
     
     .ncc-article-topic {    
         margin-bottom: 1.25em;    
@@ -1158,5 +1198,4 @@ body {
         margin-bottom: .5em;    
         font-size: .75em;
     }
-    
     
