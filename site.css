@@ -986,216 +986,214 @@ body {
     
     
     
-    
-    
-    
-    .ncc-article {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-    }
-    
-    .ncc-article *
-       {
-        font-family: "Noto Sans", sans-serif;
-        line-height: 1.8;
-    }
-    
-    .ncc-article h1
-    , .ncc-article h2
-    , .ncc-article h3
-    , .ncc-article h4
-    , .ncc-article h5  {
-        font-family: 'Alike', serif;
-        color: #000;
-        font-weight: normal;
-    }
-    
-    .ncc-article hr {
-        margin-top: 0em;
-        margin-bottom: 0em;
-    }
-    
-    .ncc-article-header {
-        margin: 0 2.65em;
-    }
-    
-    .ncc-article-section {
-        margin: 0 3em;
-    }
-    
-    .ncc-article-header {
-        display: flex;
-        flex-direction: column; 
-        justify-content: space-between;
-        align-items: flex-start; 
-    }
-    
-    .ncc-article-title {
-        font-size: 2em;
-        line-height: 1;
-    }
-    
-    .ncc-article-title span.ncc-version {
-        color: red;
-        font-size: .5em;
-    }
-    
-    .ncc-article-headline {    
-        font-size: .875em;
-    }
-    
-    .ncc-article-header
-    , .ncc-article-section {
-        padding-top: 2.5em;
-        padding-bottom: 2.5em;
-    }
-    
-    .ncc-article-body {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-    }
-    
-    .ncc-article ul {
-        padding-left: 2em;
-        margin-top: 0em;
-    }
 
-    .ncc-article p + p 
-    , .ncc-aprticle p + .ncc-article-p-img-side-by-side
-    , .ncc-aprticle .ncc-article-p-img-side-by-side + .ncc-article-p-img-side-by-side {
-        margin-top: .25em;
+
+
+.ncc-article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
-    .ncc-article p + ul 
-    , .ncc-article li > ul {        
-        margin-top: .75em;
-    }
-    
-    .ncc-article li {
-        list-style-type: disc;
-        padding-left: .5em;
-        margin-bottom: .7em;
-    }
 
-    .ncc-article .ncc-unbulleted li {
-        list-style-type: none;
-    }
-    
-    .ncc-article li:last-child {
-        margin-bottom: 0em;
-    }
-    
-    .ncc-article-section {
-        display: flex;
-        flex-direction: column;
-        font-size: .875em;
-    }
-    
-    .ncc-article-section-title {
-        font-size: 1.67em;
-        margin-bottom: .3em;
-    }
-    
-    .ncc-article-section-content {
-        margin-top: 1em;    
-    }
-    
-    .ncc-article-subsection {
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 2.25em;
-    }
-    
-    .ncc-article-subsection:last-child {    
-        margin-bottom: 0em;
-    }
-    
-    .ncc-article-subsection-title {
-        font-size: 1.25em;
-        margin-bottom: .375em;
-    }
+.ncc-article *
+    {
+    font-family: "Noto Sans", sans-serif;
+    line-height: 1.8;
+}
 
-    .ncc-article-p-img-side-by-side {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        max-width: 100%;
-    }
+.ncc-article h1
+, .ncc-article h2
+, .ncc-article h3
+, .ncc-article h4
+, .ncc-article h5  {
+    font-family: 'Alike', serif;
+    color: #000;
+    font-weight: normal;
+}
 
-    .ncc-article-p-img-side-by-side.ncc-flop {                   
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-start;
-        flex-direction: row-reverse;
-    }
+.ncc-article hr {
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
 
-    .ncc-article-p-img-side-by-side > img {
-        margin-top: .5em;
-        margin-right: .75em;
-        max-height: 15em;
-    }
+.ncc-article-header {
+    margin: 0 2.65em;
+}
 
-    .ncc-article-p-img-side-by-side.ncc-flop > img {           
-        margin-left: .75em;
-        margin-right: 0em;
-        width: 30em;
-    }
-    
-    .ncc-article-subsection-content-images-column {
-        float: right;
-        margin-left: .75em;
-        background-color: rgb(246,246,246);    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    
-     .ncc-article-image-caption {
-        max-width: 15em;
-        margin: .6em;        
-    }
-    
-     .ncc-article-image-row img {
-        object-fit: cover;
-    }
+.ncc-article-section {
+    margin: 0 3em;
+}
 
-     .ncc-article-image-caption p {
-        font-size: .8em;
-        margin-bottom: .3em;
-        margin-top: 0em;
-    }
-    
-    .ncc-article-subsection-content-alt {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-    }
-    
-    .ncc-article-subsection-content-alt .ncc-article-subsection-content-images-row {
-        align-self: flex-start;    
-    }
-    
-    .ncc-article-subsection-content-images-row {
-        margin-top: .75em;
-        background-color: rgb(246,246,246);    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
+.ncc-article-header {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between;
+    align-items: flex-start; 
+}
 
-    .ncc-article-subsection-content-images-row:after {
-        flex-grow: 1;
-    }
-    
-    .ncc-article-topic {    
-        margin-bottom: 1.25em;    
-    }
-    
-    .ncc-article-topic-response {
-        margin-top: .5em;    
-        margin-bottom: .5em;    
-        font-size: .75em;
-    }
-    
+.ncc-article-title {
+    font-size: 2em;
+    line-height: 1;
+}
+
+.ncc-article-title span.ncc-version {
+    color: red;
+    font-size: .5em;
+}
+
+.ncc-article-headline {    
+    font-size: .875em;
+}
+
+.ncc-article-header
+, .ncc-article-section {
+    padding-top: 2.5em;
+    padding-bottom: 2.5em;
+}
+
+.ncc-article-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.ncc-article ul {
+    padding-left: 2em;
+    margin-top: 0em;
+}
+
+.ncc-article p + p 
+, .ncc-aprticle p + .ncc-article-p-img-side-by-side
+, .ncc-aprticle .ncc-article-p-img-side-by-side + .ncc-article-p-img-side-by-side {
+    margin-top: .25em;
+}
+.ncc-article p + ul 
+, .ncc-article li > ul {        
+    margin-top: .75em;
+}
+
+.ncc-article li {
+    list-style-type: disc;
+    padding-left: .5em;
+    margin-bottom: .7em;
+}
+
+.ncc-article .ncc-unbulleted li {
+    list-style-type: none;
+}
+
+.ncc-article li:last-child {
+    margin-bottom: 0em;
+}
+
+.ncc-article-section {
+    display: flex;
+    flex-direction: column;
+    font-size: .875em;
+}
+
+.ncc-article-section-title {
+    font-size: 1.67em;
+    margin-bottom: .3em;
+}
+
+.ncc-article-section-content {
+    margin-top: 1em;    
+}
+
+.ncc-article-subsection {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2.25em;
+}
+
+.ncc-article-subsection:last-child {    
+    margin-bottom: 0em;
+}
+
+.ncc-article-subsection-title {
+    font-size: 1.25em;
+    margin-bottom: .375em;
+}
+
+.ncc-article-p-img-side-by-side {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 100%;
+}
+
+.ncc-article-p-img-side-by-side.ncc-flop {                   
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: row-reverse;
+}
+
+.ncc-article-p-img-side-by-side > img {
+    margin-top: .5em;
+    margin-right: .75em;
+    max-height: 15em;
+}
+
+.ncc-article-p-img-side-by-side.ncc-flop > img {           
+    margin-left: .75em;
+    margin-right: 0em;
+    width: 30em;
+}
+
+.ncc-article-subsection-content-images-column {
+    float: right;
+    margin-left: .75em;
+    background-color: rgb(246,246,246);    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+    .ncc-article-image-caption {
+    max-width: 15em;
+    margin: .6em;        
+}
+
+    .ncc-article-image-row img {
+    object-fit: cover;
+}
+
+    .ncc-article-image-caption p {
+    font-size: .8em;
+    margin-bottom: .3em;
+    margin-top: 0em;
+}
+
+.ncc-article-subsection-content-alt {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+
+.ncc-article-subsection-content-alt .ncc-article-subsection-content-images-row {
+    align-self: flex-start;    
+}
+
+.ncc-article-subsection-content-images-row {
+    margin-top: .75em;
+    background-color: rgb(246,246,246);    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ncc-article-subsection-content-images-row:after {
+    flex-grow: 1;
+}
+
+.ncc-article-topic {    
+    margin-bottom: 1.25em;    
+}
+
+.ncc-article-topic-response {
+    margin-top: .5em;    
+    margin-bottom: .5em;    
+}
