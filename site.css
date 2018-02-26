@@ -1352,7 +1352,7 @@ input[type=search], input[type=text] {
     line-height: 1.8;
 }
 
-.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article h4, .ncc-article h5 {
+.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article-section-title a.toggle-content, .ncc-article h4, .ncc-article h5 {
     font-family: 'Alike', serif;
     color: #000;
     font-weight: normal;
@@ -1378,10 +1378,11 @@ input[type=search], input[type=text] {
     align-items: flex-start;
 }
 
-.ncc-article-title {
+.ncc-article-title, .ncc-section-title a.toggle-content {
     font-size: 2em;
     line-height: 1;
 }
+
 
 .ncc-article-title span.ncc-version {
     color: red;
@@ -1436,6 +1437,10 @@ input[type=search], input[type=text] {
     font-size: .875em;
 }
 
+.ncc-article .toggle-content {
+    color: #000;
+}
+
 .ncc-article-section-title {
     font-size: 1.67em;
     margin-bottom: .3em;
@@ -1467,26 +1472,19 @@ input[type=search], input[type=text] {
     max-width: 100%;
 }
 
-.ncc-article-p-img-side-by-side.ncc-flop {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: row-reverse;
-}
-
 .ncc-article-p-img-side-by-side>img {
     margin-top: .5em;
     margin-right: .75em;
     max-height: 15em;
 }
 
-.ncc-article-p-img-side-by-side.ncc-flop>img {
-    margin-left: .75em;
-    margin-right: 0em;
-    width: 30em;
+.ncc-article-subsection-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.ncc-article-subsection-content-images {
+.ncc-article-subsection-content-insert {
     float: right;
     margin-left: .75em;
     background-color: rgb(246, 246, 246);
@@ -1510,12 +1508,6 @@ input[type=search], input[type=text] {
     margin-top: 0em;
 }
 
-.ncc-article-subsection-content.ncc-alt {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-}
-
 .ncc-article-topic {
     margin-bottom: 1.25em;
 }
@@ -1534,19 +1526,52 @@ input[type=search], input[type=text] {
     .ncc-article-section {
         margin: 0 3em;
     }
-    .ncc-article-subsection-content.ncc-alt .ncc-article-subsection-content-images.ncc-alt {
+    .ncc-article a.toggle-content {
+        cursor: default;
+    }
+    .ncc-article a.toggle-content i.fas.fa-angle-down {
+        display: none;
+    }
+    .ncc-article-subsection-content-insert-and-pairing.ncc-alt {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+    }
+    .ncc-article-subsection-content-insert-and-pairing.ncc-alt .ncc-article-subsection-content-insert.ncc-alt {
         align-self: flex-start;
     }
-    .ncc-article-subsection-content-images.ncc-alt {
+    .ncc-article-subsection-content-insert.ncc-alt {
         margin-top: .75em;
+        margin-left: 0em;
         background-color: rgb(246, 246, 246);
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
     }
-    .ncc-article-subsection-content-images.nccalt:after {
-        flex-grow: 1;
+    .ncc-article-p-img-side-by-side.ncc-flop>img {
+        margin-left: .75em;
+        margin-right: 0em;
+        width: 30em;
+    }
+    .ncc-article-p-img-side-by-side.ncc-flop {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: row-reverse;
+    }
+    /* toggle negation code */
+    .ncc-article #vision-toggle {
+        display: block !important;
+    }
+    .ncc-article #procedures-toggle {
+        display: block !important;
+    }
+    .ncc-article #possible-problems-and-solutions-toggle {
+        display: block !important;
+    }
+    .ncc-article #faqs-toggle {
+        display: block !important;
     }
 }
 
@@ -1563,65 +1588,65 @@ input[type=search], input[type=text] {
         margin-left: 0em;
         margin-right: 0em;
     }
-    .ncc-article-subsection-content-images {
+    .ncc-article-subsection-content-insert {
+        margin-top: .5em;
         margin-left: 0em;
     }
     .ncc-article-section p, .ncc-article-section li, .ncc-article-subsection-content p, .ncc-article-subsection-content li {
         line-height: 1.75em;
     }
-
-    .ncc-article p + p {
+    .ncc-article p+p, .ncc-article-p-img-side-by-side, .ncc-article-topic+.ncc-article-topic {
         margin-top: 1.5em;
     }
-
     .ncc-article ul {
         padding-left: 1.25em;
         margin-top: 0em;
         margin-left: 0em;
     }
-
-    .ncc-article li {        
+    .ncc-article li {
         padding-left: 0em;
     }
-/*     
-    .ncc-article p+p, .ncc-aprticle p+.ncc-article-p-img-side-by-side, .ncc-aprticle .ncc-article-p-img-side-by-side+.ncc-article-p-img-side-by-side {
-        margin-top: .25em;
+    .ncc-article ul.ncc-unbulleted {
+        padding-left: 0em;
     }
-    
-    .ncc-article p+ul, .ncc-article li>ul {
-        margin-top: .75em;
+    .ncc-article a:link {
+        word-break: normal;
     }
-    
-    .ncc-article li {
-        list-style-type: disc;
-        padding-left: .5em;
-        margin-bottom: .7em;
-    }
-    
-    .ncc-article .ncc-unbulleted li {
-        list-style-type: none;
-    }
-    
-    .ncc-article li:last-child {
-        margin-bottom: 0em;
-    } */
 }
 
 /* Smartphones (portrait) ----------- */
 
 @media only screen and (max-width: 449px) {
-    .ncc-article-subsection-content {
+    .ncc-article .ncc-article-section-title {
+            line-height: 1.25em;
+    }
+    .ncc-article .ncc-article-section-title a {
+        line-height: inherit;
+}
+    .ncc-article-subsection-content-insert-and-pairing {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center
     }
-    .ncc-article-subsection-content-images {
+    .ncc-article-subsection-content-insert {
         background-color: rgb(246, 246, 246);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
     }
+    .ncc-article-p-img-side-by-side {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .ncc-article-p-img-side-by-side>img {
+        margin-right: 0em;
+    }
+    /* 
+    .ncc-article-p-img-side-by-side img {
+        margin-left: 2em;
+        margin-right: 2em;
+    } */
 }
 
 /* Smartphones (landscape) ----------- */
