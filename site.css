@@ -1484,7 +1484,7 @@ input[type=search], input[type=text] {
     align-items: flex-start;
 }
 
-.ncc-article-subsection-content-insert {
+.ncc-article-insert {
     float: right;
     margin-left: .75em;
     background-color: rgb(246, 246, 246);
@@ -1517,9 +1517,9 @@ input[type=search], input[type=text] {
     margin-bottom: .5em;
 }
 
-/* Desktops and laptops ----------- */
+/* Desktops, laptops, and the article porton of landscaped tablets ----------- */
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-width: 1026px) {
     .ncc-article-header {
         margin: 0 2.65em;
     }
@@ -1532,15 +1532,32 @@ input[type=search], input[type=text] {
     .ncc-article a.toggle-content i.fas.fa-angle-down {
         display: none;
     }
-    .ncc-article-subsection-content-insert-and-pairing.ncc-alt {
+    /* toggle negation code */
+    .ncc-article #vision-toggle {
+        display: block !important;
+    }
+    .ncc-article #procedures-toggle {
+        display: block !important;
+    }
+    .ncc-article #possible-problems-and-solutions-toggle {
+        display: block !important;
+    }
+    .ncc-article #faqs-toggle {
+        display: block !important;
+    }
+}
+
+/* Desktops, laptops, tablets, and landscape smartphones ----------- */
+@media only screen and (min-width:450px) {
+    .ncc-article-insert-and-pairing.ncc-alt {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
     }
-    .ncc-article-subsection-content-insert-and-pairing.ncc-alt .ncc-article-subsection-content-insert.ncc-alt {
+    .ncc-article-insert-and-pairing.ncc-alt .ncc-article-insert.ncc-alt {
         align-self: flex-start;
     }
-    .ncc-article-subsection-content-insert.ncc-alt {
+    .ncc-article-insert.ncc-alt {
         margin-top: .75em;
         margin-left: 0em;
         background-color: rgb(246, 246, 246);
@@ -1560,24 +1577,11 @@ input[type=search], input[type=text] {
         align-items: flex-start;
         flex-direction: row-reverse;
     }
-    /* toggle negation code */
-    .ncc-article #vision-toggle {
-        display: block !important;
-    }
-    .ncc-article #procedures-toggle {
-        display: block !important;
-    }
-    .ncc-article #possible-problems-and-solutions-toggle {
-        display: block !important;
-    }
-    .ncc-article #faqs-toggle {
-        display: block !important;
-    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+@media only screen and (max-width: 750px) {
     /* proprofs magics a body selector into .html .hiq-t  */
     body {
         padding: 0em;
@@ -1588,7 +1592,7 @@ input[type=search], input[type=text] {
         margin-left: 0em;
         margin-right: 0em;
     }
-    .ncc-article-subsection-content-insert {
+    .ncc-article-insert {
         margin-top: .5em;
         margin-left: 0em;
     }
@@ -1614,7 +1618,7 @@ input[type=search], input[type=text] {
     }
 }
 
-/* Smartphones (portrait) ----------- */
+/* Smartphones only (portrait) ----------- */
 
 @media only screen and (max-width: 449px) {
     .ncc-article .ncc-article-section-title {
@@ -1623,13 +1627,13 @@ input[type=search], input[type=text] {
     .ncc-article .ncc-article-section-title a {
         line-height: inherit;
 }
-    .ncc-article-subsection-content-insert-and-pairing {
+    .ncc-article-insert-and-pairing {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
         align-items: center
     }
-    .ncc-article-subsection-content-insert {
+    .ncc-article-insert {
         background-color: rgb(246, 246, 246);
         display: flex;
         flex-direction: column;
@@ -1641,14 +1645,26 @@ input[type=search], input[type=text] {
     }
     .ncc-article-p-img-side-by-side>img {
         margin-right: 0em;
+        align-self: center;
     }
-    /* 
-    .ncc-article-p-img-side-by-side img {
-        margin-left: 2em;
-        margin-right: 2em;
-    } */
 }
 
 /* Smartphones (landscape) ----------- */
 
-@media only screen and (min-width: 450px) {}
+@media only screen and (min-width: 450px) and (max-width: 767px) {
+    .ncc-article-insert-and-pairing.ncc-alt .ncc-article-insert.ncc-alt
+    {
+        background-color: #fff
+    }
+    .ncc-article-insert.ncc-alt {
+        justify-content: flex-start;
+    }
+}
+
+ /* Tablets (portrait only) ----------- */
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .ncc-article-insert.ncc-alt {
+        justify-content: center;
+    } 
+} 
