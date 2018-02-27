@@ -1341,6 +1341,8 @@ input[type=search], input[type=text] {
 
 /* Custom NCC CSS Starts here */
 
+/* ARTICLES */
+
 .ncc-article {
     display: flex;
     flex-direction: column;
@@ -1581,7 +1583,7 @@ input[type=search], input[type=text] {
 
 /* Smartphones (portrait and landscape) ----------- */
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 767px) {
     /* proprofs magics a body selector into .html .hiq-t  */
     body {
         padding: 0em;
@@ -1627,26 +1629,6 @@ input[type=search], input[type=text] {
     .ncc-article .ncc-article-section-title a {
         line-height: inherit;
 }
-    .ncc-article-insert-and-pairing {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        align-items: center
-    }
-    .ncc-article-insert {
-        background-color: rgb(246, 246, 246);
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-    .ncc-article-p-img-side-by-side {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .ncc-article-p-img-side-by-side>img {
-        margin-right: 0em;
-        align-self: center;
-    }
 }
 
 /* Smartphones (landscape) ----------- */
@@ -1661,10 +1643,69 @@ input[type=search], input[type=text] {
     }
 }
 
- /* Tablets (portrait only) ----------- */
+/* Smartphones and Tablets, portrait */
 
- @media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (max-width: 449px)
+, only screen and (min-width: 768px) and (max-width: 1024px) { 
+    .ncc-article-insert-and-pairing {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center
+    }
+    .ncc-article-insert {
+        background-color: #fff !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }    
     .ncc-article-insert.ncc-alt {
         justify-content: center;
     } 
+    
+    .ncc-article-p-img-side-by-side {
+        display: flex;
+        flex-direction: column-reverse !important;
+    }
+    .ncc-article-p-img-side-by-side>img {
+        margin-right: 0em;
+        align-self: center;
+    }
+}
+ /* Tablets (portrait only) ----------- */
+
+ @media only screen and (min-width: 768px) and (max-width: 1024px) {
+    body {
+        padding: 0em;
+    }
+    .ncc-article-header, .ncc-article-section {
+        padding-top: 1em;
+        padding-bottom: 1em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .ncc-article-insert {
+        margin-top: .5em;
+        margin-left: 0em;
+    }
+    .ncc-article-section p, .ncc-article-section li, .ncc-article-subsection-content p, .ncc-article-subsection-content li {
+        line-height: 1.75em;
+    }
+    .ncc-article p+p, .ncc-article-p-img-side-by-side, .ncc-article-topic+.ncc-article-topic {
+        margin-top: 1.5em;
+    }
+    .ncc-article ul {
+        padding-left: 1.25em;
+        margin-top: 0em;
+        margin-left: 0em;
+    }
+    .ncc-article li {
+        padding-left: 0em;
+    }
+    .ncc-article ul.ncc-unbulleted {
+        padding-left: 0em;
+    }
+    .ncc-article a:link {
+        word-break: normal;
+    }
 } 
