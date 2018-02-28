@@ -1547,6 +1547,10 @@ input[type=search], input[type=text] {
     .ncc-article #faqs-toggle {
         display: block !important;
     }
+    .ncc-article hr {
+        width: 200%;
+        margin-left: -50%;
+    }
 }
 
 /* Desktops, laptops, tablets, and landscape smartphones ----------- */
