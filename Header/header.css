@@ -198,6 +198,22 @@ li.bk_wnr {
 
 /* Custom CSS */
 
+/* TOP LEVEL SELECTORS */
+
+/* this selects the top level nodes for the article and navpanel */
+.x-tab-panel {
+	border-top: 0;
+}
+
+
+/* this is user-adjustable splitter between article and navpanel*/
+div.x-layout-split {
+	width: 0px;
+}
+
+/* ARTICLE */
+
+/* This is the top node of the article area.*/
 #ui-main-tab {
 	border-left: 1px solid rgb(237, 235, 235);
 	border-top: 0;
@@ -205,38 +221,77 @@ li.bk_wnr {
 	z-index: 50;
 }
 
+/* this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body {
 	border-top: 0;
 }
 
+/* this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body>div.x-tab-panel-body {
 	padding-left: 0;
 }
 
-body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
-	border-right-width: 0px;
-	border-left-width: 0px;
-}
-
+/* This is where the touch enabled mobile site's html begins */
 div.hiq-t-wrap>div.hiq-t {
 	padding-left: 26px;
 	padding-right: 26px;
 }
 
-div.x-layout-split {
-	width: 0px;
+/* NAVPANEL */
+
+/* parent node of the navigation panel */
+.x-tab-panel.ui-side-nav {
+	z-index: 25;
 }
 
+/* this is the grandchild of the navigation panel's top node */
+body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
+	border-right-width: 0px;
+	border-left-width: 0px;
+}
+
+
+/* this is the parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
 .ui-toc-tree-body {
 	background-color: rgb(246, 246, 246);
 }
 
+/* this is the main unordered list of the navpanel */
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
 }
 
+/* these are the parent nodes of all the navpanel's unordered list items */
+UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
+	border-color: rgb(237, 235, 235);
+}
+
+/* selects for all navpanel's top-level items, except the ncc graphic */
+UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
+	margin-left: 3.4em;
+}
+
+/* selects the text of any list item in the navpanel */
+.new-toc .ui-toc-tree .x-tree-node .lct-1 a.x-tree-node-anchor span.ltxt1, .new-toc .ui-toc-tree .x-tree-node a.x-tree-node-anchor span.ltxt2, .new-toc .ui-toc-tree .x-tree-node a.x-tree-node-anchor span.ltxt3 {
+	font-size: 1.1em;
+	font-family: "Noto Sans", sans-serif;
+}
+
+/* these are the items in any sublist of a top level list item */
+.new-toc .ui-toc-tree li.x-tree-node .x-tree-node-el.lct-2 {
+	padding-top: .35em;
+	padding-bottom: .35em;
+}
+
+/* selects sublists and sub-sublists in the navpanel */
+li.x-tree-node ul li.x-tree-node {
+	padding-left: 3em;
+	padding-right: 0;
+}
+
+/* this is the main child of the parent node of the first item in the unorder navpanel list. By default it is a home icon that links to the knowledge base homepage. */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
 	position: sticky;
 	top: 0px;
@@ -246,6 +301,7 @@ UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
 	z-index: 1;
 }
 
+/* this is a descendant of the above. I don't know it's function for proprofs, but here we're using it in tandem with the above selector to allow the logo to scale. */
 UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	position: absolute;
 	width: 100%;
@@ -258,30 +314,19 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	padding: 0;
 }
 
-UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
-	border-color: rgb(237, 235, 235);
-}
-
-.x-tab-panel {
-	border-top: 0;
-}
-
-.x-tab-panel.ui-side-nav {
-	z-index: 25;
-}
-
+/* the first of these selectors is the home icon in the navpanel's first list item */
+/* the secand is the text accompanying that icon "HOME" */
+the second of these selectors is the default text of the home
 UL.x-tree-root-ct>DIV>LI:first-child div.icon-inner-ct, UL.x-tree-root-ct>DIV>LI:first-child span.ltxt1 {
 	display: none;
 }
 
+/* this prevents the ncc image from being whited out when the home list item is selected */
 UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 	background-color: white;
 }
 
-UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
-	margin-left: 3.4em;
-}
-
+/* these are the child divs of the navpanel's list items */
 .new-toc .ui-toc-tree li.x-tree-node:not(:first-child) .x-tree-node-el.lct-1 {
 	padding-left: 3em;
 	padding-bottom: 1.35em;
@@ -289,62 +334,7 @@ UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 	font-family: 'Noto Sans', sans-serif;
 }
 
+/* this is the navpanel item below the graphic */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
 	border-top: 0px;
-}
-
-.new-toc .ui-toc-tree li.x-tree-node .x-tree-node-el.lct-2 {
-	padding-top: .35em;
-	padding-bottom: .35em;
-}
-
-li.x-tree-node ul li.x-tree-node {
-	padding-left: 3em;
-	padding-right: 0;
-}
-
-.new-toc .ui-toc-tree .x-tree-node .lct-1 a.x-tree-node-anchor span.ltxt1, .new-toc .ui-toc-tree .x-tree-node a.x-tree-node-anchor span.ltxt2 {
-	font-size: 1.1em;
-	font-family: "Noto Sans", sans-serif;
-}
-
-/* Tablet */
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-	/* left panel topmost level */
-	.x-dock.x-sized>.x-dock-body {}
-	/* list items' parent (includes other page mechanics also) */
-	.x-list .x-scroll-scroller {}
-	/* the home list */
-	#ext-list-1 {}
-	/* home list item */
-	#ext-list-1 .x-list-item-first {
-		position: sticky !important;
-		top: 0px;
-		height: 0em;
-		padding-bottom: 100%;
-		box-shadow: 0px 0 3px rgba(0, 0, 0, 0.1);
-		z-index: 1;
-		background-color: red !important;
-	}
-	/* home item direct descendant */
-	#ext-list-1 > div:first-child {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		background-image: url(https://dzf8vqv24eqhg.cloudfront.net/userfiles/12157/15548/ckfinder/images/NCC_150x48-011.png);
-		background-repeat: no-repeat;
-		background-position: center;
-		background-size: contain;
-		background-color: #ffffff;
-		padding: 0;
-	}
-	/* list item top level */
-	.x-list .x-list-item.x-list-item-relative {}
-	/* list item text */
-	#ui-side-nav .x-list .ui-toc-folder, #ui-side-nav .x-list .ui-toc-page, #ui-side-nav .x-list .ui-index-item
-	/* selection arrows */
-	.x-list .x-list-disclosure::before {}
-	/* selected list item (this is one div descedent than the list item itself, but this is where proprofs applies its selected item classes) */
-	.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl, .x-list-normal .x-list-item.x-item-selected .x-dock-horizontal {}
 }
