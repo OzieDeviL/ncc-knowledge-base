@@ -1,14 +1,25 @@
-<link
-	href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
-	rel="stylesheet" type="text/css" />
-<div class="head_content">
-	<div id="logo_cust">
-		<a href="#" target="_blank">
-			<img
-			src="/userfiles/12157/15548/ckfinder/images/NCC_150x48-011.png" />
-		</a>
+<!-- If these aren't loaded here in the header, elements with Noto font sometimes falls back in the navpanel and article areas -->
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Crimson+Text" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Noto+Sans:400,700|Alike">
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet" type="text/css"
+/>
+
+<div class="ncc-header">
+	<div class="ncc-navpanel-match">
+		<div class="ncc-search-tool">
+			<input id="txtsearch" class="ncc-search-input" name="" type="text" onkeyup="if(event.keyCode === 13) {window.search (document.getElementById('txtsearch').value); document.getElementById('txtsearch').value = ''}"
+			/>
+			<div id="Search" name="Search" class="ncc-fa-wrapper ncc-search-button" onclick="window.search (document.getElementById('txtsearch').value);document.getElementById('txtsearch').value = '';">
+				<i class="fa fa-search"></i>
+			</div>
+		</div>
 	</div>
-	<div class="head_menu">
-		
+	<div class="ncc-right-toolbar">
+		<div class="ncc-user">
+			<div class="ncc-fa-wrapper ncc-user-button">
+				<i class="fa fa-user"></i>
+			</div>
+		</div>
 	</div>
 </div>
