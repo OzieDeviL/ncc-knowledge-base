@@ -416,6 +416,7 @@ li.folder-node ul li.folder-node {
 /* this is the main child of the parent node of the first item in the unorder navpanel list. By default it is a home icon that links to the knowledge base homepage. */
 
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
+	position: relative;
 	position: sticky;
 	position: -webkit-sticky; /* safari was having problems with sticky */
 	top: 0px;
