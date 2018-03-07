@@ -399,7 +399,7 @@ UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 /* selects sublists and sub-sublists in the navpanel */
 
 li.folder-node ul li.folder-node {
-	padding-left: 3em;
+	padding-left: 2em;
 	padding-right: 0;
 }
 
@@ -459,7 +459,7 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 /* these are the child divs of the navpanel's list items */
 
 .new-toc .ui-toc-tree li.x-tree-node:not(:first-child) .x-tree-node-el.lct-1 {
-	padding-left: 3em;
+	padding-left: 2em;
 	padding-bottom: 1.35em;
 	padding-top: 1.35em;
 	font-family: 'Noto Sans', sans-serif;
