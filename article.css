@@ -1354,7 +1354,7 @@ input[type=search], input[type=text] {
     line-height: 1.8;
 }
 
-.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article-section-title a.toggle-content, .ncc-article h4, .ncc-article h5 {
+.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article .ncc-article-section-title a.toggle-content, .ncc-article h4, .ncc-article h5 {
     font-family: 'Alike', serif;
     color: #000;
     font-weight: normal;
@@ -1405,9 +1405,25 @@ input[type=search], input[type=text] {
     justify-content: start;
 }
 
-.ncc-article .ncc-article ul, .ncc-article .ncc-article-letter {
+.ncc-article ul, .ncc-article .ncc-article-letter {
     padding-left: 2em;
     margin-top: 0em;
+}
+
+/* letter template styling */
+.ncc-article .ncc-article-letter {
+    line-height: 1.25em;
+}
+
+.ncc-article .ncc-article-letter p,
+.ncc-article .ncc-article-letter strong, 
+.ncc-article .ncc-article-letter br  {
+    line-height: inherit;
+    margin-top: 1em;
+}
+
+.ncc-article .ncc-article-letter .ncc-article-letter-signature {
+    margin-top: 3em;
 }
 
 .ncc-article p+p, .ncc-aprticle p+.ncc-article-p-img-side-by-side, .ncc-aprticle .ncc-article-p-img-side-by-side+.ncc-article-p-img-side-by-side {
@@ -1444,10 +1460,13 @@ input[type=search], input[type=text] {
 
 .ncc-article .ncc-article-section-title {
     margin-bottom: .3em;
+    font-size: 1.67em;
+    display: flex;
 }
 
 .ncc-article .ncc-article-section-title a {
-    font-size: 1.67em;
+    font-size: inherit;
+    flex-basis: 100%;
 }
 
 .ncc-article .ncc-article-section-content {
@@ -1530,12 +1549,10 @@ input[type=search], input[type=text] {
     .ncc-article .ncc-article-section {
         margin: 0 3em;
     }
-    .ncc-article .ncc-article a.toggle-content {
+    .ncc-article a.toggle-content {
         cursor: default;
     }
-    .ncc-article a.toggle-content i.fas.fa-angle-down {
-        display: none;
-    }
+
     /* toggle negation code */
     .ncc-article #vision-toggle {
         display: block !important;
@@ -1595,7 +1612,7 @@ input[type=search], input[type=text] {
     body {
         padding: 0em;
     }
-    .ncc-article .ncc-article-header, .ncc-article-section {
+    .ncc-article .ncc-article-header, .ncc-article .ncc-article-section {
         padding-top: 1em;
         padding-bottom: 1em;
         margin-left: 0em;
@@ -1683,7 +1700,7 @@ input[type=search], input[type=text] {
     body {
         padding: 0em;
     }
-    .ncc-article .ncc-article-header, .ncc-article-section {
+    .ncc-article .ncc-article-header, .ncc-article .ncc-article-section {
         padding-top: 1em;
         padding-bottom: 1em;
         margin-left: 1em;
