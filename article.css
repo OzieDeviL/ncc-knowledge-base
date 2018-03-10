@@ -1459,9 +1459,17 @@ input[type=search], input[type=text] {
 }
 
 .ncc-article .ncc-article-section-title {
-    margin-bottom: .3em;
     font-size: 1.67em;
     display: flex;
+}
+
+.ncc-article .ncc-article-section-title div:first-child,
+.ncc-article .ncc-article-section-title p:first-child,
+.ncc-article .ncc-article-section-title ul:first-child,
+.ncc-article .ncc-article-section-title h2:first-child,
+.ncc-article .ncc-article-section-title h3:first-child
+{
+    margin-top: 3em;
 }
 
 .ncc-article .ncc-article-section-title a {
@@ -1538,6 +1546,10 @@ input[type=search], input[type=text] {
 .ncc-article .ncc-article-topic-response {
     margin-top: .5em;
     margin-bottom: .5em;
+}
+
+.ncc-article-italics {
+    font-style: italic;
 }
 
 /* Desktops, laptops, and the article porton of landscaped tablets ----------- */

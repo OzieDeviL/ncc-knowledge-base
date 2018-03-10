@@ -384,7 +384,7 @@ UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 
 /* selects the text of any list item in the navpanel */
 
-.new-toc .ui-toc-tree .x-tree-node .lct-1 a.x-tree-node-anchor span.ltxt1, .new-toc .ui-toc-tree .x-tree-node a.x-tree-node-anchor span.ltxt2, .new-toc .ui-toc-tree .x-tree-node a.x-tree-node-anchor span.ltxt3 {
+.new-toc .ui-toc-tree .x-tree-node .lct-1 .x-tree-node-anchor .ltxt1, .new-toc .ui-toc-tree .x-tree-node .lct-2 .x-tree-node-anchor .ltxt2, .new-toc .ui-toc-tree .x-tree-node .lct-3 .x-tree-node-anchor .ltxt3, .new-toc .ui-toc-tree .x-tree-node .lct-4 .x-tree-node-anchor .ltxt4, .new-toc .ui-toc-tree .x-tree-node .lct-5 .x-tree-node-anchor .ltxt5{
 	font-size: 1em;
 	font-family: "Noto Sans", sans-serif;
 }
@@ -399,8 +399,11 @@ UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 /* selects sublists and sub-sublists in the navpanel */
 
 li.folder-node ul li.folder-node {
-	padding-left: 2em;
 	padding-right: 0;
+}
+
+.folder-node .l1 {
+	padding-left: 2em;
 }
 
 /* selects the text of 2nd level topics in the nav panel */
