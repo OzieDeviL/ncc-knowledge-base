@@ -408,7 +408,7 @@ li.folder-node ul li.folder-node {
 
 /* selects the text of 2nd level topics in the nav panel */
 .topic-node .ltxt2 {
-	margin-left: 2.47em !important;
+	/* margin-left: 2.47em !important; */
 }
 
 /* selects the text of 2nd level topics in the nav panel */

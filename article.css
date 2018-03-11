@@ -1429,7 +1429,7 @@ input[type=search], input[type=text] {
     margin-top: .25em;
 }
 
-.ncc-article p+ul, .ncc-article li>ul {
+.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p {
     margin-top: .75em;
 }
 
@@ -1463,7 +1463,7 @@ input[type=search], input[type=text] {
 }
 
 .ncc-article .ncc-section-toggle {
-    margin-top: .375em;
+    margin-top: .45em;
 }
 
 .ncc-article .ncc-section-title a {
@@ -1546,31 +1546,46 @@ input[type=search], input[type=text] {
     font-style: italic;
 }
 
+.ncc-article .ncc-major-artistic-work-title {
+    font-style: italic;
+}
+
 /* Desktops, laptops, and the article porton of landscaped tablets ----------- */
 
 @media only screen and (min-width: 1026px) {
     .ncc-article .ncc-article-header {
         margin: 0 2.65em;
+    
     }
     .ncc-article .ncc-section {
         margin: 0 3em;
+    
     }
     .ncc-article a.toggle-content {
         cursor: default;
+    
     }
     /* toggle negation code */
     .ncc-article #vision-toggle {
         display: block !important;
+    
     }
     .ncc-article #procedures-toggle {
         display: block !important;
+    
     }
     .ncc-article #possible-problems-and-solutions-toggle {
         display: block !important;
+    
     }
     .ncc-article #faqs-toggle {
         display: block !important;
+    
     }
+    .ncc-article #results-toggle {
+        display: block !important;
+    }
+
     .ncc-article hr {
         width: 200%;
         margin-left: -50%;
