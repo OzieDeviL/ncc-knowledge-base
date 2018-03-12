@@ -341,6 +341,12 @@ div.hiq-t-wrap>div.hiq-t {
 	padding-right: 26px;
 }
 
+/* This is the platforms self-promotional plug */
+
+.ui-poweredby-kb {
+    display: none;
+}
+
 /* NAVPANEL */
 
 /* parent node of the navigation panel */

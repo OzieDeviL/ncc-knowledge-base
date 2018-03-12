@@ -1341,6 +1341,61 @@ input[type=search], input[type=text] {
 
 /* Custom NCC CSS Starts here */
 
+/* HOME */
+
+.ui-poweredby-kb {
+    display: none;
+}
+
+.ncc-home {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ncc-home,
+.ncc-home .ncc-home-heading,
+.ncc-home .ncc-home-search-input,
+.ncc-home .ncc-home-search-button,
+.ncc-home .ncc-home-document-additions,
+.ncc-home .ncc-home-website-visit {
+    font-family: "Noto Sans";
+}
+
+.ncc-home .ncc-home-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.ncc-home .ncc-home-search {
+    margin-top: 3em;
+}
+
+.ncc-home .ncc-home-search-input, .ncc-home .ncc-home-search-button {
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.ncc-home .ncc-home-search-button {
+    background-color: rgb(2, 35, 85);
+    color: #fff;
+    font-size: 1em;
+    border-width: 0;
+}
+
+.ncc-home .ncc-home-document-additions {
+    display: block;
+    margin-top: 2em;
+}
+
+.ncc-home .ncc-home-website-visit {
+    justify-self: flex-end;
+    margin-bottom: 3em;
+    font-size: .75em;
+}
+
 /* ARTICLES */
 
 .ncc-article {
@@ -1554,52 +1609,44 @@ sub, sup {
     /* Specified in % so that the sup/sup is the
        right size relative to the surrounding text */
     font-size: 75%;
-  
     /* Zero out the line-height so that it doesn't
        interfere with the positioning that follows */
     line-height: 0;
-  
     /* Where the magic happens: makes all browsers position
        the sup/sup properly, relative to the surrounding text */
     position: relative;
-  
     /* Note that if you're using Eric Meyer's reset.css, this
        is already set and you can remove this rule */
     vertical-align: baseline;
-  }
-  
-  sup {
+}
+
+sup {
     /* Move the superscripted text up */
     top: -0.5em;
-  }
-  
-  sub {
+}
+
+sub {
     /* Move the subscripted text down, but only
        half as far down as the superscript moved up */
     bottom: -0.25em;
-  }
+}
 
 /* Desktops, laptops, and the article porton of landscaped tablets ----------- */
 
 @media only screen and (min-width: 1026px) {
     .ncc-article .ncc-article-header {
         margin: 0 2.65em;
-    
     }
     .ncc-article .ncc-section {
         margin: 0 3em;
-    
     }
     .ncc-article a.toggle-content {
         cursor: default;
-    
     }
-    
     /* toggle negation code */
     .ncc-article .ncc-section-toggle {
-        display: block !important;    
+        display: block !important;
     }
-
     .ncc-article hr {
         width: 200%;
         margin-left: -50%;
