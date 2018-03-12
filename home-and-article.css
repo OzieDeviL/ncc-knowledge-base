@@ -1360,7 +1360,7 @@ input[type=search], input[type=text] {
 .ncc-home .ncc-home-search-button,
 .ncc-home .ncc-home-document-additions,
 .ncc-home .ncc-home-website-visit {
-    font-family: "Noto Sans";
+    font-family: "Noto Sans", sans-serif;
 }
 
 .ncc-home .ncc-home-body {
@@ -1404,7 +1404,7 @@ input[type=search], input[type=text] {
     justify-content: flex-start;
 }
 
-.ncc-article p, .ncc-article li, .ncc-article div, .ncc-article ul, .ncc-article strong, .ncc-article a, .ncc-article hr, .ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article h4, .ncc-article h5, .ncc-article h6, .ncc-article i, .ncc-article iframe, .ncc-article span, .ncc-article img {
+.ncc-article p, .ncc-article li, .ncc-article div, .ncc-article ul, .ncc-article strong, .ncc-article a, .ncc-article hr, .ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article h4, .ncc-article h5, .ncc-article h6, .ncc-article i, .ncc-article iframe, .ncc-article span, .ncc-article img, .ncc-article table{
     font-family: "Noto Sans", sans-serif;
     line-height: 1.8;
 }
@@ -1413,6 +1413,11 @@ input[type=search], input[type=text] {
     font-family: 'Alike', serif;
     color: #000;
     font-weight: normal;
+}
+
+.ncc-article a:visited
+, .ncc-home a:visited {
+    color: #609;
 }
 
 .ncc-article hr {
@@ -1480,11 +1485,11 @@ input[type=search], input[type=text] {
     margin-top: 3em;
 }
 
-.ncc-article p+p, .ncc-aprticle p+.ncc-p-img-side-by-side, .ncc-aprticle .ncc-p-img-side-by-side+.ncc-p-img-side-by-side {
+.ncc-article p+p, .ncc-aprticle p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side {
     margin-top: .25em;
 }
 
-.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p {
+.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p, .ncc-article p+table, .ncc-article ul+table, .ncc-article table+p, .ncc-article table+ul {
     margin-top: .75em;
 }
 
@@ -1500,6 +1505,10 @@ input[type=search], input[type=text] {
 
 .ncc-article li:last-child {
     margin-bottom: 0em;
+}
+
+.ncc-article ul + table {
+    
 }
 
 .ncc-article .ncc-section {
@@ -1693,33 +1702,43 @@ sub {
     body {
         padding: 0em;
     }
+
     .ncc-article .ncc-article-header, .ncc-article .ncc-section {
         padding-top: 1em;
         padding-bottom: 1em;
         margin-left: 0em;
         margin-right: 0em;
     }
+
     .ncc-article .ncc-insert {
         margin-top: .5em;
         margin-left: 0em;
     }
-    .ncc-article .ncc-section p, .ncc-article .ncc-section li, .ncc-article .ncc-subsection-content p, .ncc-article .ncc-subsection-content li {
+
+    .ncc-article .ncc-section p, .ncc-article .ncc-section li, .ncc-article .ncc-section table, .ncc-article .ncc-subsection-content p, .ncc-article .ncc-subsection-content li, .ncc-article .ncc-subsection-content table,  {
         line-height: 1.75em;
     }
-    .ncc-article p+p, .ncc-article .ncc-p-img-side-by-side, .ncc-article .ncc-topic+.ncc-topic {
+
+    .ncc-article p+p, 
+    .ncc-article .ncc-p-img-side-by-side, 
+    .ncc-article .ncc-topic + .ncc-topic {
         margin-top: 1.5em;
     }
+
     .ncc-article ul {
         padding-left: 1.25em;
         margin-top: 0em;
         margin-left: 0em;
     }
+
     .ncc-article li {
         padding-left: 0em;
     }
+
     .ncc-article ul.ncc-unbulleted {
         padding-left: 0em;
     }
+    
     .ncc-article a:link {
         word-break: normal;
     }
