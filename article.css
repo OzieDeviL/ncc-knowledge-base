@@ -1596,14 +1596,7 @@ sub, sup {
     }
     
     /* toggle negation code */
-    .ncc-article #vision-toggle,
-    .ncc-article #vision-statement-toggle,
-    .ncc-article #mission-statement-toggle,
-    .ncc-article #procedures-toggle,
-    .ncc-article #possible-problems-and-solutions-toggle,
-    .ncc-article #faqs-toggle,
-    .ncc-article #results-toggle,
-    .ncc-article #our-story, {
+    .ncc-article .ncc-section-toggle {
         display: block !important;    
     }
 
