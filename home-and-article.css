@@ -1465,17 +1465,17 @@ input[type=search], input[type=text] {
     justify-content: start;
 }
 
-.ncc-article ul, .ncc-article .ncc-letter {
+.ncc-article ul, .ncc-article .ncc-letter, .ncc-article ol {
     padding-left: 2em;
     margin-top: 0em;
 }
 
 /* letter template styling */
 .ncc-article .ncc-letter {
-    line-height: 1.25em;
+    line-height: 1.4em;
 }
 
-.ncc-article .ncc-letter p, .ncc-article .ncc-letter strong, .ncc-article .ncc-letter br {
+.ncc-article .ncc-letter p, .ncc-article .ncc-letter strong, .ncc-article .ncc-letter br, .ncc-article .ncc-letter ol {
     line-height: inherit;
     margin-top: 1em;
 }
@@ -1485,7 +1485,36 @@ input[type=search], input[type=text] {
 }
 /* end letter template styling */
 
-.ncc-article p+p, .ncc-aprticle p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side {
+.ncc-article .ncc-table-math td, .ncc-article .ncc-table-math th {
+    padding: 0 .2em 0 0;
+}
+
+.ncc-article .ncc-table-math td {
+    text-align: right;
+}
+
+.ncc-article .ncc-total td {
+    border-top: 1px solid black;
+}
+
+.ncc-article .ncc-color-red {
+    color: red;
+}
+
+.ncc-article .ncc-text-underline {
+    text-decoration: underline;
+}
+
+.ncc-article ol {
+    margin-left: 0;
+}
+
+.ncc-article .ncc-transform-upper {
+    text-transform: uppercase;
+}
+
+
+.ncc-article p+p, .ncc-article p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side {
     margin-top: .25em;
 }
 
@@ -1493,7 +1522,7 @@ input[type=search], input[type=text] {
     margin-top: .75em;
 }
 
-/* table styling */
+/* default table styling */
 .ncc-article .ncc-table caption {
     font-size: 1em;
     font-weight: bold;
@@ -1525,10 +1554,23 @@ input[type=search], input[type=text] {
 .ncc-article .ncc-table thead {
     border-right: 1px solid rgb(2,35,85);
 }
-/* end table styling */
+/* end default table styling */
+
+/* for invisible tables used for math-ish text */
+.ncc-article .ncc-invisible-table {
+    box-shadow: initial;
+}
+
+.ncc-article .ncc-invisible-table * {
+    border: none;
+    background-color: initial;
+}
+
+.ncc-article ul li {
+    list-style-type: disc;
+}
 
 .ncc-article li {
-    list-style-type: disc;
     padding-left: .5em;
     margin-bottom: .7em;
 }
@@ -1539,10 +1581,6 @@ input[type=search], input[type=text] {
 
 .ncc-article li:last-child {
     margin-bottom: 0em;
-}
-
-.ncc-article ul + table {
-    
 }
 
 .ncc-article .ncc-section {
