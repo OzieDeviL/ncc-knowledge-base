@@ -1409,7 +1409,7 @@ input[type=search], input[type=text] {
     line-height: 1.8;
 }
 
-.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article .ncc-section-title a.toggle-content, .ncc-article h4, .ncc-article h5 {
+.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article .ncc-section-title a.toggle-content span, .ncc-article h4, .ncc-article h5 {
     font-family: 'Alike', serif;
     color: #000;
     font-weight: normal;
@@ -1440,7 +1440,7 @@ input[type=search], input[type=text] {
     align-items: flex-start;
 }
 
-.ncc-article .ncc-title, .ncc-article .toggle-content {
+.ncc-article .ncc-title {
     font-size: 2em;
     line-height: 1;
 }
@@ -1603,8 +1603,12 @@ input[type=search], input[type=text] {
 }
 
 .ncc-article .ncc-section-title a {
-    font-size: inherit;
+    display: flex;
     flex-basis: 100%;
+}
+
+.ncc-article .ncc-section-title a span {
+    font-size: inherit;
 }
 
 .ncc-article .ncc-section-content {
@@ -1714,23 +1718,31 @@ sub {
 
 /* Desktops, laptops, and the article porton of landscaped tablets ----------- */
 
-@media only screen and (min-width: 1026px) {
+@media only screen and (min-width: 1025px) {
     .ncc-article .ncc-article-header {
         margin: 0 2.65em;
     }
+
     .ncc-article .ncc-section {
         margin: 0 3em;
     }
+
     .ncc-article a.toggle-content {
         cursor: default;
     }
+
     /* toggle negation code */
     .ncc-article .ncc-section-toggle {
         display: block !important;
     }
+
     .ncc-article hr {
         width: 200%;
         margin-left: -50%;
+    }
+
+    .ncc-article .ncc-chevron {
+        display: none;
     }
 }
 
@@ -1764,6 +1776,52 @@ sub {
         justify-content: space-between;
         align-items: flex-start;
         flex-direction: row-reverse;
+    }
+
+    .ncc-article .ncc-body .ncc-section .ncc-section-title .ncc-chevron {
+        top: .7em;
+    }
+
+    .ncc-article .ncc-body .ncc-section-title .ncc-chevron.ncc-down {
+        top: .4em;
+    }
+}
+
+/* Tablets & Smartphones (portrait and landscape)----------- */
+
+@media only screen and (max-width: 1024px) {
+    .ncc-article .ncc-section .ncc-section-title .ncc-chevron {
+    border-style: solid;
+    border-width: 0.085em 0.085em 0 0;
+    display: inline-block;
+    height: 0.6em;
+    left: 0.15em;
+    position: relative;
+    top: 0.5em;
+    transform: rotate(-45deg);
+    vertical-align: top;
+    width: 0.6em;
+    color: transparent;
+    border-color: #000;
+    }
+
+    .ncc-article .ncc-section .ncc-chevron.ncc-right {
+        left: 0;
+        transform: rotate(45deg);
+    }
+
+    .ncc-article .ncc-section .ncc-chevron.ncc-down {
+        top: .2em;
+        transform: rotate(135deg);
+    }
+
+    .ncc-article .ncc-section .ncc-chevron.ncc-left {
+        left: 0.25em;
+        transform: rotate(-135deg);
+    }
+
+    .ncc-article .ncc-section-title-text {
+        margin-left: 1em;
     }
 }
 
@@ -1822,7 +1880,7 @@ sub {
     .ncc-article .ncc-section-title {
         line-height: 1.25em;
     }
-    .ncc-article .ncc-section-title a {
+    .ncc-article .ncc-section-title a, .ncc-article .ncc-section-title a span,  {
         line-height: inherit;
     }
 }
@@ -1872,34 +1930,51 @@ sub {
     body {
         padding: 0em;
     }
+
     .ncc-article .ncc-article-header, .ncc-article .ncc-section {
         padding-top: 1em;
         padding-bottom: 1em;
         margin-left: 1em;
         margin-right: 1em;
     }
+
     .ncc-article .ncc-insert {
         margin-top: .5em;
         margin-left: 0em;
     }
+
     .ncc-article .ncc-section p, .ncc-article .ncc-section li, .ncc-article .ncc-subsection-content p, .ncc-article .ncc-subsection-content li {
         line-height: 1.75em;
     }
+
     .ncc-article p+p, .ncc-p-img-side-by-side, .ncc-topic+.ncc-topic {
         margin-top: 1.5em;
     }
+
     .ncc-article ul {
         padding-left: 1.25em;
         margin-top: 0em;
         margin-left: 0em;
     }
+
     .ncc-article li {
         padding-left: 0em;
     }
+
     .ncc-article ul.ncc-unbulleted {
         padding-left: 0em;
     }
+
+    .ncc-article a:link {
+        word-break: normal;
+    }
+
+    .ncc-article ul.ncc-unbulleted {
+        padding-left: 0em;
+    }
+    
     .ncc-article a:link {
         word-break: normal;
     }
 }
+
