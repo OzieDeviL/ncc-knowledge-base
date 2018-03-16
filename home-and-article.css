@@ -1452,6 +1452,7 @@ input[type=search], input[type=text] {
 
 .ncc-article .ncc-headline {
     font-size: .875em;
+    line-height: 1.3em;
 }
 
 .ncc-article .ncc-article-header, .ncc-article .ncc-section {
@@ -1577,6 +1578,11 @@ input[type=search], input[type=text] {
 
 .ncc-article .ncc-unbulleted li {
     list-style-type: none;
+}
+
+.ncc-article .ncc-body .ncc-section .ncc-tight-list li {
+    margin-bottom: 0;
+    line-height: 1.3em;
 }
 
 .ncc-article li:last-child {
