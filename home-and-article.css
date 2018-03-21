@@ -1567,6 +1567,14 @@ input[type=search], input[type=text] {
     background-color: initial;
 }
 
+.ncc-article .ncc-featured-document {
+    margin: auto;
+    display: flex;
+    flex-basis: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
 .ncc-article ul li {
     list-style-type: disc;
 }
