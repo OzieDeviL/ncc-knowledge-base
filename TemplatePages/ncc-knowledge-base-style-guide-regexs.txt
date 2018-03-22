@@ -11,3 +11,12 @@ find (dangerous)
 (\d{1,2})([\.])?(\d{2})?([pa]m?)(\s?[-–]\s?)?((\d{1,2})([\.])?(\d{2})?([pa]m?)){0,1}
 replace (not working)
 $2:(?4:-00)$5&ndash;$8:(?{10}:-00)${11}
+
+1st, 2nd, 3rds
+find
+(\d{1,9})(st|nd|rd|th)
+replace
+$1<sup>$2</sup>
+
+Fixing sup line breaks do to vscode
+(\d{1,9})[\n\r](<sup>)(st|nd|rd|th)(<\/sup>)

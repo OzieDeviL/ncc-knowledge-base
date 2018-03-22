@@ -1409,7 +1409,7 @@ input[type=search], input[type=text] {
     line-height: 1.8;
 }
 
-.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article .ncc-section-title a.toggle-content span, .ncc-article h4, .ncc-article h5 {
+.ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article .ncc-section-title a.toggle-content span, .ncc-article h4, .ncc-article h5, .ncc-article h3 span, .ncc-article h4 span {
     font-family: 'Alike', serif;
     color: #000;
     font-weight: normal;
@@ -1431,6 +1431,10 @@ input[type=search], input[type=text] {
 
 .ncc-article .ncc-section {
     margin: 0 3em;
+}
+
+.ncc-article .ncc-section-headline {
+    display: inline-block;
 }
 
 .ncc-article .ncc-article-header {
@@ -1573,6 +1577,11 @@ input[type=search], input[type=text] {
     flex-basis: column;
     justify-content: flex-start;
     align-items: center;
+}
+
+.ncc-article .ncc-alt-indent-none {
+    padding-left: 0;
+    margin-left:0;
 }
 
 /* 1st level lists */
@@ -1726,7 +1735,7 @@ input[type=search], input[type=text] {
     font-style: italic;
 }
 
-.ncc-article .ncc-major-artistic-work-title {
+.ncc-article .ncc-major-artistic-work {
     font-style: italic;
 }
 
