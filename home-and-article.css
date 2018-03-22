@@ -1575,15 +1575,33 @@ input[type=search], input[type=text] {
     align-items: center;
 }
 
+/* 1st level lists */
 .ncc-article ul li {
     list-style-type: disc;
 }
 
+/* 2nd level lists */
 .ncc-article ul li ul li {
     list-style-type: circle;
 }
 
+/* 3rd level lists */
 .ncc-article ul li ul li ul li{
+    list-style-type: square;
+}
+
+/* 4th level lists */
+.ncc-article ul li ul li ul li ul li{
+    list-style-type: disc;
+}
+
+/* 5th level lists */
+.ncc-article ul li ul li ul li ul li ul li{
+    list-style-type: circle;
+}
+
+/* 6th level lists (it actually goes this far in the copy) */
+.ncc-article ul li ul li ul li ul li ul li ul li{
     list-style-type: square;
 }
 
