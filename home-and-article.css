@@ -1579,6 +1579,14 @@ input[type=search], input[type=text] {
     list-style-type: disc;
 }
 
+.ncc-article ul li ul li {
+    list-style-type: circle;
+}
+
+.ncc-article ul li ul li ul li{
+    list-style-type: square;
+}
+
 .ncc-article li {
     padding-left: .5em;
     margin-bottom: .7em;
