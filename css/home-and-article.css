@@ -1519,7 +1519,7 @@ input[type=search], input[type=text] {
 }
 
 
-.ncc-article p+p, .ncc-article p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side {
+.ncc-article p+p, .ncc-article p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side, .ncc-article p+.ncc-subsection, .ncc-article ul+.ncc-subsection {
     margin-top: .25em;
 }
 

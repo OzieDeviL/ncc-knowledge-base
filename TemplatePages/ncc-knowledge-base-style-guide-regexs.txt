@@ -20,3 +20,5 @@ $1<sup>$2</sup>
 
 Fixing sup line breaks do to vscode
 (\d{1,9})[\n\r](<sup>)(st|nd|rd|th)(<\/sup>)
+$1<sup>$2</sup>
+
