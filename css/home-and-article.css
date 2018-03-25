@@ -1623,7 +1623,7 @@ input[type=search], input[type=text] {
     margin-bottom: .7em;
 }
 
-.ncc-article .ncc-unbulleted li {
+.ncc-article .ncc-unbulleted > li {
     list-style-type: none;
 }
 
