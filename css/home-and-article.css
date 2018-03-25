@@ -1523,8 +1523,12 @@ input[type=search], input[type=text] {
     margin-top: .25em;
 }
 
-.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p, .ncc-article p+table, .ncc-article ul+table, .ncc-article .ncc-subsection+table, .ncc-article table+p, .ncc-article table+ul {
+.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p, .ncc-article p+table, .ncc-article ul+table, .ncc-article .ncc-subsection+table, .ncc-article table+p, .ncc-article table+ul, .ncc-article *+h5 {
     margin-top: .75em;
+}
+
+.ncc-article h5 {
+    margin-bottom: 0;
 }
 
 /* default table styling */
