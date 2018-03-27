@@ -1,0 +1,24 @@
+{
+  "name": "ncc-sop",
+  "version": "0.1.0",
+  "description": "national childrens choir online knowledge base",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "ejs": "^2.5.8",
+    "ejs-lint": "^0.3.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OzieDeviL/ncc-knowledge-base.git"
+  },
+  "author": "David Laughlin",
+  "license": "SEE LICENSE IN ncc-sop-license.txt",
+  "bugs": {
+    "url": "https://github.com/OzieDeviL/ncc-knowledge-base/issues"
+  },
+  "homepage": "https://github.com/OzieDeviL/ncc-knowledge-base#readme"
+}

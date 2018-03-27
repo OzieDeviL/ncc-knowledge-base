@@ -1,0 +1,23 @@
+<!-- <%= article.title -%> -->
+<div class="ncc-article" id="<%= article.id -%>">
+    <div class="ncc-article-header">
+        <h2 class="ncc-title">
+            <%= article.title %>
+        </h2>
+        <p class="ncc-headline">
+            <% if (article.headline) { -%>
+            <%= article.headline %>
+            <% } -%>
+        </p>
+    </div>
+
+    <hr>
+    <div class="ncc-body">
+        <!-- Article Content -->
+        <% if (Object.keys(article.sections) && Object.keys(article.sections).length > 0) { -%>   
+        <% Object.keys(article.sections).forEach(function(sectionKey){ -%>
+            <%- article.sections[sectionKey].body -%>
+            <% }) -%>
+        <% } -%>
+    </div>
+</div>
