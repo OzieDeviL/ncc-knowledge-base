@@ -21,7 +21,7 @@
             <%- '<p class="ncc-section-btf-headline">' + '\n' + section.btfHeadline + '\n' + '</p>' -%>
         <%_ } -%>        
         <!-- <%- section.title.toLowerCase() -%> content -->
-        <% if (Object.keys(section.subsections) && Object.keys(section.subsections.length > 0)) { -%>   
+        <%_ if (Object.keys(section.subsections) && Object.keys(section.subsections.length > 0)) { -%>   
         <%_ Object.keys(section.subsections).forEach(function(subsectionKey){ -%>
             <%- section.subsections[subsectionKey].body -%>
             <%_ }) -%>

@@ -14,10 +14,10 @@
     <hr>
     <div class="ncc-body">
         <!-- Article Content -->
-        <% if (Object.keys(article.sections) && Object.keys(article.sections).length > 0) { -%>   
-        <% Object.keys(article.sections).forEach(function(sectionKey){ -%>
+        <%_ if (Object.keys(article.sections) && Object.keys(article.sections).length > 0) { -%>   
+        <%_ Object.keys(article.sections).forEach(function(sectionKey){ -%>
             <%- article.sections[sectionKey].body -%>
-            <% }) -%>
-        <% } -%>
+            <%_ }) -%>
+        <%_ } -%>
     </div>
 </div>

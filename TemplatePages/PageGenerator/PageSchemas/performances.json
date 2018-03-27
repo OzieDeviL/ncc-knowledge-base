@@ -1,0 +1,163 @@
+{
+    "article": {
+        "title": "Performances",
+        "headline": null,
+        "id": "performances",
+        "sections": {
+            "sectionOne": {
+                "body": null,
+                "title": "Concert Venues",
+                "id": "concert-venues",
+                "headline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Los Angeles",
+                        "id": "los-angeles"
+                    },
+                    "subsectionTwo": {
+                        "title": "New York",
+                        "id": "new-york"
+                    }
+                }
+            },
+            "sectionTwo": {
+                "body": null,
+                "title": "Box Office Policies",
+                "id": "box-office-policies",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Get Your Tickets",
+                        "id": "get-your-tickets"
+                    },
+                    "subsectionTwo": {
+                        "title": "No Refunds",
+                        "id": "no-refunds"
+                    },
+                    "subsectionThree": {
+                        "title": "No Exchanges",
+                        "id": "no-exchanges"
+                    },
+                    "subsectionFour": {
+                        "title": "No Coordinated Reselling of Your Tickets Through the NCC",
+                        "id": "no-coordinated-reselling"
+                    },
+                    "subsectionFive": {
+                        "title": "Children Under 5",
+                        "id": "children-under-five"
+                    }
+                }
+            },
+            "sectionThree": {
+                "body": null,
+                "title": "Late Seating and Re-entry at Concerts",
+                "id": "late-seating",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Policy",
+                        "id": "late-seating-policy"
+                    },
+                    "subsectionTwo": {
+                        "title": "Respecting Our Performers",
+                        "id": "respecting-our-performers-seating"
+                    },
+                    "subsectionThree": {
+                        "title": "Respecting Our Patrons",
+                        "id": "respecting-our-patrons"
+                    }
+                }
+            },
+            "sectionFour": {
+                "body": null,
+                "title": "No Photography or Video at Concert Events",
+                "id": "no-photography",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Policy",
+                        "id": "no-photography-policy"
+                    },
+                    "subsectionTwo": {
+                        "title": "Respecting Our Performers and Audience Members",
+                        "id": "respecting-our-performers-photography"
+                    },
+                    "subsectionThree": {
+                        "title": "Don&rsquo;t Worry &mdash;We&rsquo;ve Got You Covered&hellip;",
+                        "id": "got-you-covered"
+                    },
+                    "subsectionFour": {
+                        "title": "Other Steps You Can Take to Keep the Cortert Focused on the Music &hellip;",
+                        "id": "other-steps"
+                    },
+                    "subsectionFive": {
+                        "title": "The Broad Stage",
+                        "id": "the-broad-stage"
+                    },
+                    "subsectionSix": {
+                        "title": "Backstage",
+                        "id": "backstage"
+                    }
+                }
+            },
+            "sectionFive": {
+                "body": null,
+                "title": "Moments in Music",
+                "id": "moments-in-music",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Capturing The Moment",
+                        "id": "capturing-the-moment"
+                    },
+                    "subsectionTwo": {
+                        "title": "Getting the Prints Into Your Home and out to Your Friends",
+                        "id": "prints-into-your-home"
+                    },
+                    "subsectionThree": {
+                        "title": "Your Child&rsquo;s Name in Lights&hellip;",
+                        "id": "name-in-lights"
+                    }
+                }
+            },
+            "sectionSix": {
+                "body": null,
+                "title": "The Big Day",
+                "id": "the-big-day",
+                "isLastSection": true,
+                "headline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "The Night Before",
+                        "id": "the-night-before"
+                    },
+                    "subsectionTwo": {
+                        "title": "The Day of the Show",
+                        "id": "the-day-of-the-show"
+                    },
+                    "subsectionThree": {
+                        "title": "Before leaving home&mdash<span class=\"ncc-transform-upper\">do not forget</span>",
+                        "id": "before-leaving-home"
+                    },
+                    "subsectionFour": {
+                        "title": "Arriving at the Concert Venue",
+                        "id": "arriving-at-the-concert-venue"
+                    },
+                    "subsectionFive": {
+                        "title": "Concert Check-list",
+                        "id": "concert-check-list"
+                    }
+                }
+            }
+        }
+    }
+}

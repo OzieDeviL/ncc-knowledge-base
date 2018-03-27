@@ -1,3 +1,43 @@
+New text processing:
+1. paragraphs
+    Find: \n{2}
+    Replace: \n</p>\n\n<p>\n
+2. process the lists through textEdit
+    -make sure to delete any line breaks in textEdit within a list item
+    -replace all garbled text
+    -move to the WYSIWYG, strip formatting, extract the source lists
+    -move to VScode
+3. format list whitespacing (won't handle list items that contain sublists)
+    find: (<li>)(.*(</li>){0}.*)(</li>)
+    replace: $1\n$2$3\n$4
+4. replace all mdashes, ndashes, &
+5. encode all right curlies 
+    find (dangerous, assumes all straight single quotes should be right curly): '|&#39;|’
+    replace: &rsquo;
+6. encode all left curlies;
+    find: (‘) ALT + ] 
+7-1. encode all left doubles (probably best to eyeball these)
+    find: "|“
+    replace: &ldquo;
+7-2. encode all right doubles
+    find: "|”
+8. format ordinals with <sup> tags
+    find: (\d{1,9})(st|nd|rd|th)
+    replace: $1<sup>$2</sup>
+(9. format times
+10. format time RANGES
+11. format phone NUMBERS)
+12. replace all caps with spans 
+    find (dangerous, will pick up NCCs and other acronyms): ([A-Z]{3,100})
+    replace: <span class="ncc-transform-upper">$1</span>
+<span class
+13. look for bolds, italics, and links in original text and add appropriate tags/classes
+
+
+
+
+
+
 PHONE NUMBERS
 Find
 (\(?)(\d{3})([\.\-–\)]\s?)(\d{3})([\.\-\s])(\d{4})
@@ -13,13 +53,10 @@ replace (not working)
 $2:(?4:-00)$5&ndash;$8:(?{10}:-00)${11}
 
 1st, 2nd, 3rds
-find
-(\d{1,9})(st|nd|rd|th)
-replace
-$1<sup>$2</sup>
+
 
 Fixing sup line breaks do to vscode
-(\d{1,9})[\n\r](<sup>)(st|nd|rd|th)(<\/sup>)
+(\d{1,9})[\n\r]\s*(<sup>)(st|nd|rd|th)(<\/sup>)
 $1<sup>$2</sup>
 
 Curly right single quote
