@@ -1,12 +1,12 @@
-<!-- <%= article.title -%> -->
+<!-- <%- article.title -%> -->
 <div class="ncc-article" id="<%= article.id -%>">
     <div class="ncc-article-header">
         <h2 class="ncc-title">
-            <%= article.title %>
+            <%- article.title %>
         </h2>
         <p class="ncc-headline">
             <% if (article.headline) { -%>
-            <%= article.headline %>
+            <%- article.headline %>
             <% } -%>
         </p>
     </div>

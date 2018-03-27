@@ -1,5 +1,7 @@
 //pass the filename of the JSON scheme as the first argument in the command line after "node page-component-generator.js"
 //pass the file to emit as the subsequent argument
+//e.g. node ncc-page-generator.js ./example.json ./example.html
+
 let ejs = require('ejs');
 let fs = require('fs');
 let optionsFile = process.argv[2];

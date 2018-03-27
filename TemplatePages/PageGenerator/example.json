@@ -10,6 +10,7 @@
                 "title": "Exmaple Section 1 Title",
                 "id": "section-one-id",
                 "headline": null,
+                "btfHeadline": null,
                 "isLastSection": false,
                 "subsections": {
                     "subsection-one": {
@@ -29,6 +30,7 @@
                 "title": "Section Two Title",
                 "id": "section-two-id",
                 "headline": "Section two has a headline!",
+                "btfHeadline": null,
                 "isLastSection": false,
                 "subsections": {}
             },
@@ -38,6 +40,7 @@
                 "id": "section-three-id",
                 "isLastSection": true,
                 "headline": null,
+                "btfHeadline": null,
                 "subsections": {
                     "subsection-one": {
                         "body": null,

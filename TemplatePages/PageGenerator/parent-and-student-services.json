@@ -1,0 +1,130 @@
+{
+    "article": {
+        "title": "Parent &amp; Student Services",
+        "headline": null,
+        "id": "parent-and-student-services",
+        "sections": {
+            "sectionOne": {
+                "body": null,
+                "title": "NCC Mission Statement",
+                "id": "ncc-mission-statement",
+                "headline": null,
+                "isLastSection": false,
+                "subsections": {}
+            },
+            "sectionTwo": {
+                "body": null,
+                "title": "NCC Artistic &amp; Administrative Team Commitment",
+                "id": "team-commitment",
+                "headline": null,
+                "btfHeadline": "The goal we strive to achieve for you, our valued members",
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Not happy with something?",
+                        "id": "not-happy"
+                    }
+                }
+            },
+            "sectionThree": {
+                "body": null,
+                "title": "My NCC",
+                "id": "my-ncc",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "This really is too easy!",
+                "subsections": {}
+            },
+            "sectionFour": {
+                "body": null,
+                "title": "Carpools",
+                "id": "carpools",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Getting to the NCC",
+                "subsections": {}
+            },
+            "sectionFive": {
+                "body": null,
+                "title": "\"This Sunday at the NCC\" &amp; \"Tomorrow at the NCC\"",
+                "id": "at-the-ncc",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Your Sensational Weekly Reminder",
+                "subsections": {
+                    "subsectionTwo": {
+                        "title": "Sensational, huh?",
+                        "id": "sensational-huh"
+                    }
+                }
+            },
+            "sectionSix": {
+                "body": null,
+                "title": "NCC Member Bulletin",
+                "id": "member-bulletin",
+                "isLastSection": false,
+                "headline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "OK, I get it. So how do I do this?",
+                        "id": "how-do-i-do-this"
+                    },
+                    "subsectionTwo": {
+                        "title": "Are there guidelines for posts, and deadlines for when they must be submitted?",
+                        "id": "guidelines-and-deadlines"
+                    }
+                }
+            },
+            "sectionSeven": {
+                "body": null,
+                "title": "Digital Soundtracks",
+                "id": "digital-soundtracks",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Providing You with Sounds at Home",
+                "subsections": {}
+            },
+            "sectionEight": {
+                "body": null,
+                "title": "E-mail Communication",
+                "id": "email-communication",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Getting You the Info You Need",
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Important Disclosure",
+                        "id": "important-disclosure"
+                    }
+                }
+            },
+            "sectionNine": {
+                "body": null,
+                "title": "Private Voice Instruction Outside of NCC Curriculum",
+                "id": "private-voice-instruction",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Important Things to Know About Going the Extra Mile",
+                "subsections": {}
+            },
+            "sectionTen": {
+                "body": null,
+                "title": "Summer Programs (NCC-Approved)",
+                "id": "summer-programs",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "So you want even <span class=\"ncc-transform-upper\">more</span> singing and performing? That's music to our ears!",
+                "subsections": {}
+            },
+            "sectionEleven": {
+                "body": null,
+                "title": "The Art of Handling Rejection",
+                "id": "handling-rejection",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "It's okay&mdash;really.",
+                "subsections": {}
+            }
+        }
+    }
+}

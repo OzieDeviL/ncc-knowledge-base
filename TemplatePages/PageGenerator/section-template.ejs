@@ -1,4 +1,4 @@
-<!--  <%= section.title.toUpperCase() %> -->
+<!--  <%- section.title.toUpperCase() -%> -->
 <div class="ncc-section" id="<%= section.id _%>">
     <h3 class="ncc-section-title">
         <a class="toggle-content" href="#<%= section.id _%>-toggle" onclick="document.querySelector('#<%= section.id _%> .ncc-chevron').classList.toggle('ncc-down');"
@@ -7,26 +7,29 @@
                 .
             </span>
             <span class="ncc-section-title-text">
-                <%= section.title -%>
+                <%- section.title -%>
                 <% if (section.headline) { -%>   
                 <%- '<span class="ncc-section-headline">' %>                
-                <%= section.headline %>                
+                <%- section.headline %>                
                 <%- '</span>' %>
                 <% } -%>
             </span>
         </a>
     </h3>
     <div id="<%= section.id _%>-toggle" class="ncc-section-toggle">
-        <!-- <%= section.title.toLowerCase() %> content -->
+        <%_ if (section.btfHeadline) { -%>
+            <%- '<p class="ncc-section-btf-headline">' + '\n' + section.btfHeadline + '\n' + '</p>' -%>
+        <%_ } -%>        
+        <!-- <%- section.title.toLowerCase() -%> content -->
         <% if (Object.keys(section.subsections) && Object.keys(section.subsections.length > 0)) { -%>   
-        <% Object.keys(section.subsections).forEach(function(subsectionKey){ -%>
-            <%- section.subsections[subsectionKey].body %>
-            <% }) -%>
-        <% } -%>
+        <%_ Object.keys(section.subsections).forEach(function(subsectionKey){ -%>
+            <%- section.subsections[subsectionKey].body -%>
+            <%_ }) -%>
+        <%_ } -%>
     </div>
 </div>
 <% if (section.isLastSection == false) { -%>   
-    <%= -%>
+    <%- -%>
     <%- '<hr>' %>
-    <%= %>
+    <%- %>
 <% } -%>

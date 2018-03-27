@@ -22,3 +22,12 @@ Fixing sup line breaks do to vscode
 (\d{1,9})[\n\r](<sup>)(st|nd|rd|th)(<\/sup>)
 $1<sup>$2</sup>
 
+Curly right single quote
+Find
+(&#39;|'|’)
+Replace
+&rsquo;
+
+Double Quote Pairs
+
+Left Double Quotes
