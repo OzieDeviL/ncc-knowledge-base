@@ -1,0 +1,30 @@
+{
+    "article": {
+        "title": "Special Events",
+        "headline": null,
+        "id": "special-events",
+        "sections": {
+            "sectionOne": {
+                "body": null,
+                "title": "Annual NCC Awards Ceremony",
+                "id": "annual-ncc-awards-ceremony",
+                "headline": "Recognizing Our Students&rsquo; Exceptional Achievement",
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Who is Invited?",
+                        "id": "who-is-invited"
+                    },
+                    "subsectionTwo": {
+                        "title": "Awards",
+                        "id": "awards"
+                    },
+                    "subsectionThree": {
+                        "title": "Awards",
+                        "id": "awards"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,8 +1,9 @@
 New text processing:
 0. Check for garbled non-bullet text and recopy from source if necassary
-1. Delete artifact line breaks
-        Find: (won't handle multi-line items with periods at break): ([^\.\n])\n([^\d\n])
+1-1. Delete artifact line breaks
+        Find: (won't handle multi-line items with periods at break): ([^\.\n])\n([^\d\n􀁴])
         Replace: $1 $2
+1-2. Check for lines not ending in punctuation.
 2. process the lists        
     -replace all garbled ul bullets
         Find: 􀁴􀀁 (.*)\n
@@ -24,7 +25,12 @@ New text processing:
 3-2. Eliminate paragraph tags placed on lists incorrectly
     find: (</[uo]l>)\n</p>
     replace: $1
-3-3. mop up <p> tags from beginnig and end of text block
+3-3. Get rid of <p> tags before <ul> and </p> after </ul>
+    find: <p>\n(<ul>)
+    replace: $1
+    find: (</ul>)\n</p>
+    replace $1
+3-4. mop up <p> tags from beginnig and end of text block
 4. replace all mdashes, ndashes, and ampersands &[\s\n]
 5. encode all right curlies 
     find (dangerous, assumes all straight single quotes should be right curly): '|&#39;|’
@@ -49,8 +55,9 @@ New text processing:
     find (safe for a single html file): (\(?)(\d{3})([\.\-–\)]\s?)(\d{3})([\.\-\s])(\d{4})
     replace: ($2) $4-$6 
 12. replace all caps with spans 
-    find (dangerous, will pick up NCCs and other acronyms): (\b)([A-Z]{2,}(?:\s+[A-Z]{2,})*)(\b)
-    replace: $1<span class="ncc-transform-upper">$2</span>$3 then backtrack and transform lower then capatalize.
+    find (dangerous, will pick up NCCs and other acronyms; don't forget the case matching option in vscode): (\b)([A-Z]{2,}(?:\s+[A-Z]{2,})*)(\b)
+    replace: $1<span class="ncc-transform-upper">$2</span>$3 
+    for each replace, backtrack and transform lower then capatalize.
 13. look for bolds, italics, and links in original text and add appropriate tags/classes
 14. Insert into the sections and subsections and autoformat
 15. Fix broken <sup> line breaks due to vscode autoformat
