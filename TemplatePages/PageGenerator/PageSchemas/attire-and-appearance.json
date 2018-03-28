@@ -1,0 +1,76 @@
+{
+    "article": {
+        "title": "Attire &amp; Appearance",
+        "headline": "looking the part",
+        "id": "attire-and-appearance",
+        "sections": {
+            "sectionOne": {
+                "body": null,
+                "title": "NCC Formal Dress",
+                "id": "ncc-formal-dress",
+                "headline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "What Each Student Needs",
+                        "id": "formal-dress-needs"
+                    },
+                    "subsectionTwo": {
+                        "title": "Policy",
+                        "id": "formal-dress-policy"
+                    },
+                    "subsectionThree": {
+                        "title": "Did You Know?",
+                        "id": "did-you-know"
+                    }
+                }
+            },
+            "sectionTwo": {
+                "body": null,
+                "title": "NCC Casual Dress",
+                "id": "ncc-casual-dress",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "What Each Student Needs",
+                        "id": "casual-dress-needs"
+                    }
+                }
+            },
+            "sectionThree": {
+                "body": null,
+                "title": "NCC Festival Dress",
+                "id": "ncc-festival-dress",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "What Each Student Needs",
+                        "id": "festival-dress-needs"
+                    }
+                }
+            },
+            "sectionFour": {
+                "body": null,
+                "title": "Grooming for Performance",
+                "id": "grooming-for-performance",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Girls",
+                        "id": "grooming-girls"
+                    },
+                    "subsectionTwo": {
+                        "title": "Boys",
+                        "id": "grooming-boys"
+                    }
+                }
+            }
+        }
+    }
+}

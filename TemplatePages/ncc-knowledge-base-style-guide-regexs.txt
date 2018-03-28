@@ -1,16 +1,31 @@
 New text processing:
-1. paragraphs
+0. Check for garbled non-bullet text and recopy from source if necassary
+1. Delete artifact line breaks
+        Find: (won't handle multi-line items with periods at break): ([^\.\n])\n([^\d\n])
+        Replace: $1 $2
+2. process the lists        
+    -replace all garbled ul bullets
+        Find: 􀁴􀀁 (.*)\n
+        Replace: <li>\n$1\n</li>\n
+    -replace all ordered lists bullets with nothing
+        Find: \n(\d{1}\.\s)
+        replace: <li>\n$1\n</li>\n
+    -add opening <ul> tags
+        find: \n\n<li>
+        replace: \n\n<ul>\n<li>
+    -add closing </ul> tags
+        find: </li>\n\n
+        replace: </li>\n</ul>\n\n
+    -check if any <ul> tags need to be switched to <ol>
+    -reindent sublists        
+3-1. paragraphs tags
     Find: \n{2}
     Replace: \n</p>\n\n<p>\n
-2. process the lists through textEdit
-    -make sure to delete any line breaks in textEdit within a list item
-    -replace all garbled text
-    -move to the WYSIWYG, strip formatting, extract the source lists
-    -move to VScode
-3. format list whitespacing (won't handle list items that contain sublists)
-    find: (<li>)(.*(</li>){0}.*)(</li>)
-    replace: $1\n$2$3\n$4
-4. replace all mdashes, ndashes, &
+3-2. Eliminate paragraph tags placed on lists incorrectly
+    find: (</[uo]l>)\n</p>
+    replace: $1
+3-3. mop up <p> tags from beginnig and end of text block
+4. replace all mdashes, ndashes, and ampersands &[\s\n]
 5. encode all right curlies 
     find (dangerous, assumes all straight single quotes should be right curly): '|&#39;|’
     replace: &rsquo;
@@ -24,47 +39,26 @@ New text processing:
 8. format ordinals with <sup> tags
     find: (\d{1,9})(st|nd|rd|th)
     replace: $1<sup>$2</sup>
-(9. format times
+9. format times
+    find (dangerous): ([0-1][0-2]|\d)(?:[:\.])?(\d{2})?\s{0,2}([paPA][mM])
+    replace (fails if no minutes are specified in the find): $1:$2 \U$3
 10. format time RANGES
-11. format phone NUMBERS)
+    find (dangerous, works only after above time replacement): ([0-1]?\d{1}[:\.]\d{2}\s{0,2}[paPA][mM]).{0,3}([0-1]?\d{1}[:\.]\d{2}\s{0,2}[paPA][mM])
+    replace: $1&ndash;$2
+11. format phone NUMBERS
+    find (safe for a single html file): (\(?)(\d{3})([\.\-–\)]\s?)(\d{3})([\.\-\s])(\d{4})
+    replace: ($2) $4-$6 
 12. replace all caps with spans 
-    find (dangerous, will pick up NCCs and other acronyms): ([A-Z]{3,100})
-    replace: <span class="ncc-transform-upper">$1</span>
-<span class
+    find (dangerous, will pick up NCCs and other acronyms): (\b)([A-Z]{2,}(?:\s+[A-Z]{2,})*)(\b)
+    replace: $1<span class="ncc-transform-upper">$2</span>$3 then backtrack and transform lower then capatalize.
 13. look for bolds, italics, and links in original text and add appropriate tags/classes
+14. Insert into the sections and subsections and autoformat
+15. Fix broken <sup> line breaks due to vscode autoformat
+        find: (\d{1,9})[\n\r]\s*(<sup>)(st|nd|rd|th)(<\/sup>)
+        replace: $1<sup>$2</sup>
 
 
 
-
-
-
-PHONE NUMBERS
-Find
-(\(?)(\d{3})([\.\-–\)]\s?)(\d{3})([\.\-\s])(\d{4})
-Replace
-($2) $4-$6 
-
-TIME RANGES
-find (safe)
-((1?\d{1})([:\.])?(\d{2})?([pa]m))(\s?[-–]\s?)?((1?\d{1})([:\.])?(\d{2})?([pa]m)){0,1}
-find (dangerous)
-(\d{1,2})([\.])?(\d{2})?([pa]m?)(\s?[-–]\s?)?((\d{1,2})([\.])?(\d{2})?([pa]m?)){0,1}
-replace (not working)
-$2:(?4:-00)$5&ndash;$8:(?{10}:-00)${11}
-
-1st, 2nd, 3rds
-
-
-Fixing sup line breaks do to vscode
-(\d{1,9})[\n\r]\s*(<sup>)(st|nd|rd|th)(<\/sup>)
-$1<sup>$2</sup>
-
-Curly right single quote
-Find
-(&#39;|'|’)
-Replace
-&rsquo;
-
-Double Quote Pairs
-
-Left Double Quotes
+            -reformat list whitespacing (won't handle list items that contain sublists)
+        find: (<li>)(.*(</li>){0}.*)(</li>)
+        replace: $1\n$2$3\n$4

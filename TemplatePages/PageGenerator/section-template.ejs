@@ -1,4 +1,4 @@
-<!--  <%- section.title.toUpperCase() -%> -->
+<!--  <%- section.title.toUpperCase() -%> Section -->
 <div class="ncc-section" id="<%= section.id _%>">
     <h3 class="ncc-section-title">
         <a class="toggle-content" href="#<%= section.id _%>-toggle" onclick="document.querySelector('#<%= section.id _%> .ncc-chevron').classList.toggle('ncc-down');"
@@ -20,7 +20,7 @@
         <%_ if (section.btfHeadline) { -%>
             <%- '<p class="ncc-section-btf-headline">' + '\n' + section.btfHeadline + '\n' + '</p>' -%>
         <%_ } -%>        
-        <!-- <%- section.title.toLowerCase() -%> content -->
+        <!-- <%- section.title.toLowerCase() -%> section content -->
         <%_ if (Object.keys(section.subsections) && Object.keys(section.subsections.length > 0)) { -%>   
         <%_ Object.keys(section.subsections).forEach(function(subsectionKey){ -%>
             <%- section.subsections[subsectionKey].body -%>

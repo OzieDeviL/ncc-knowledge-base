@@ -1514,11 +1514,15 @@ input[type=search], input[type=text] {
     text-transform: uppercase;
 }
 
-.ncc-article p+p, .ncc-article p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side, .ncc-article p+.ncc-subsection, .ncc-article ul+.ncc-subsection {
+.ncc-article p+p, .ncc-article p+.ncc-p-img-side-by-side, .ncc-article .ncc-p-img-side-by-side+.ncc-p-img-side-by-side, {
     margin-top: .25em;
 }
 
-.ncc-article p+ul, .ncc-article li>ul, .ncc-article ul+p, .ncc-article p+table, .ncc-article ul+table, .ncc-article .ncc-subsection+table, .ncc-article table+p, .ncc-article table+ul, .ncc-article *+h5,  {
+.ncc-article li>ul, .ncc-article table+ul, .ncc-article p+ul, 
+.ncc-article ul+p, .ncc-article table+p, 
+.ncc-article p+table, .ncc-article ul+table, .ncc-article .ncc-subsection+table, 
+.ncc-article * +h5, 
+.ncc-article p+.ncc-subsection, .ncc-article ul+.ncc-subsection, .ncc-article div:not(.ncc-section-toggle)+.ncc-subsection {
     margin-top: .75em;
 }
 

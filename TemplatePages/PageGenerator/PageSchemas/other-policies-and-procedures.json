@@ -1,0 +1,115 @@
+{
+    "article": {
+        "title": "Other Policies &amp; Procedures",
+        "headline": null,
+        "id": "other-policies-and-procedures",
+        "sections": {
+            "sectionOne": {
+                "body": null,
+                "title": "NCC Solo Audition Policies &amp; Procedures",
+                "id": "solo-auditions",
+                "headline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "NCC Solo Roles",
+                        "id": "ncc-solo-roles"
+                    },
+                    "subsectionTwo": {
+                        "title": "Solo Eligibility",
+                        "id": "solo-eligibility"
+                    }
+                }
+            },
+            "sectionTwo": {
+                "body": null,
+                "title": "Solo Audition Agreements",
+                "id": "solo-audition-agreements",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Student/Parent Agreement",
+                        "id": "student-parent-agreement"
+                    }
+                }
+            },
+            "sectionThree": {
+                "body": null,
+                "title": "Audition Feedback",
+                "id": "audition-feedback",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {}
+            },
+            "sectionFour": {
+                "body": null,
+                "title": "Letters of Recommendation",
+                "id": "letters-of-recommendation",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Promoting the Excellence of our Students",
+                        "id": "promoting-excellence"
+                    },
+                    "subsectionTwo": {
+                        "title": "Respecting the Time of our Professionals",
+                        "id": "respecting-time"
+                    },
+                    "subsectionThree": {
+                        "title": "Utilizing Office Hours and Letterhead",
+                        "id": "utilizing-office-hours-and-letterhead"
+                    },
+                    "subsectionFour": {
+                        "title": "Important Note",
+                        "id": "important-note"
+                    }
+                }
+            },
+            "sectionFive": {
+                "body": null,
+                "title": "Gifts to Directors",
+                "id": "gifts-to-directors",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Showing Your Appreciation&hellip;",
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Policy",
+                        "id": "gifts-policy"
+                    },
+                    "subsectionTwo": {
+                        "title": "Frequently Asked Questions",
+                        "id": "faqs"
+                    }
+                }
+            },
+            "sectionSix": {
+                "body": null,
+                "title": "Regional Audition Representatives",
+                "id": "regional-audition-representatives",
+                "isLastSection": false,
+                "headline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Helping Us Make a Spectacular Impression",
+                        "id": "spectacular-impression"
+                    }
+                }
+            },
+            "sectionSeven": {
+                "body": null,
+                "title": "Golden Apple Awards",
+                "id": "golden-apple-awards",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": "Excellence must be recognized!",
+                "subsections": {}
+            }
+        }
+    }
+}
