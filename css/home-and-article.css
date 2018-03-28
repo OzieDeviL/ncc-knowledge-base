@@ -1878,6 +1878,9 @@ sub {
     .ncc-article .ncc-section-title-text {
         margin-left: 1em;
     }
+    .ncc-article .ncc-section-btf-headline {
+        font-style: italic;
+    }
 }
 
 /* Smartphones (portrait and landscape) ----------- */

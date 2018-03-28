@@ -1,0 +1,309 @@
+{
+    "article": {
+        "title": "Rehearsal Policies &amp; Procedures",
+        "headline": null,
+        "id": "rehearsal-policies-and-procedures",
+        "sections": {
+            "section1": {
+                "body": null,
+                "title": "New York Drop-off",
+                "id": "ny-drop-off",
+                "headline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedures",
+                        "id": "ny-drop-off-procedures"
+                    }
+                }
+            },
+            "section2": {
+                "body": null,
+                "title": "New York ",
+                "id": "ny-pick-up",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedures",
+                        "id": "ny-pick-up-procedures"
+                    }
+                }
+            },
+            "section3": {
+                "body": null,
+                "title": "Los Angeles Drop-off",
+                "id": "la-drop-off",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedures",
+                        "id": "la-drop-off-procedures"
+                    }
+                }
+            },
+            "section4": {
+                "body": null,
+                "title": "Los Angeles Pick-up",
+                "id": "la-pick-up",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedure",
+                        "id": "la-pick-up-procedure"
+                    }
+                }
+            },
+            "section5": {
+                "body": null,
+                "title": "Los Angeles - UCLA Campus Directions",
+                "id": "la-ucla-campus-directions",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Campus Driving Directions",
+                        "id": "campus-driving-directions"
+                    },
+                    "subsectionTwo": {
+                        "title": "Campus Parking Directions (if you prefer to park and walk)",
+                        "id": "campus-parking-directions"
+                    }
+                }
+            },
+            "section6": {
+                "body": null,
+                "title": "Check-outs",
+                "id": "check-outs",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedure",
+                        "id": "check-outs-procedure"
+                    }
+                }
+            },
+            "section7": {
+                "body": null,
+                "title": "Self Check-outs",
+                "id": "self-check-outs",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": "I Can Do it Myself",
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Procedure",
+                        "id": "self-check-outs-procedure"
+                    }
+                }
+            },
+            "sectionEight": {
+                "body": null,
+                "title": "Respecting our Facilities",
+                "id": "respecting-our-facilities",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Showing Our Deep Appreciation",
+                "subsections": {}
+            },
+            "sectionNine": {
+                "body": null,
+                "title": "Parent Chaperones",
+                "id": "parent-chaperones",
+                "isLastSection": false,
+                "headline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Keeping Our Students Safe",
+                        "id": "keeping-our-students-safe"
+                    },
+                    "subsectionTwo": {
+                        "title": "Making Sure the NCC is Covered",
+                        "id": "making-sure-the-ncc-is-covered"
+                    },
+                    "subsectionThree": {
+                        "title": "Great! So once I show up, what do I do?",
+                        "id": "once-i-show-up"
+                    }
+                }
+            },
+            "sectionTen": {
+                "body": null,
+                "title": "Mother's Day Special Schedule",
+                "id": "parent-chaperones",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "We love you, Mom!",
+                "subsections": {}
+            },
+            "sectionEleven": {
+                "body": null,
+                "title": "Parent Chaperones",
+                "id": "parent-chaperones",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Absences",
+                        "id": "abscences"
+                    },
+                    "subsectionTwo": {
+                        "title": "Tardies",
+                        "id": "tardies"
+                    },
+                    "subsectionThree": {
+                        "title": "Half-Absences and Quarter-Absences",
+                        "id": "half-absences-and-quarter-absences"
+                    }
+                }
+            },
+            "sectionTwelve": {
+                "body": null,
+                "title": "Tech Rehearsals",
+                "id": "tech-rehearsals",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Putting on the Finishing Touches",
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Mandatory Attendance",
+                        "id": "mandatory-attendance"
+                    },
+                    "subsectionTwo": {
+                        "title": "Wise Planning",
+                        "id": "wise-planning"
+                    }
+                }
+            },
+            "sectionThirteen": {
+                "body": null,
+                "title": "Rehearsal Expectations &amp; Behavioral Standards",
+                "id": "rehearsal-expectations",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Being Your Best: Proper Singing Posture",
+                        "id": "proper-singing-posture"
+                    },
+                    "subsectionTwo": {
+                        "title": "Being You Best: General Guidelines",
+                        "id": "general-guidelines"
+                    },
+                    "subsectionThree": {
+                        "title": "Rehearsal Check-list",
+                        "id": "rehearsal-check-list"
+                    }
+                }
+            },
+            "section14": {
+                "body": null,
+                "title": "Discipline",
+                "id": "discipline",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Policy",
+                        "id": "discipline-policy"
+                    },
+                    "subsectionTwo": {
+                        "title": "Being You Best: General Guidelines",
+                        "id": "general-guidelines"
+                    },
+                    "subsectionThree": {
+                        "title": "Rehearsal Check-list",
+                        "id": "rehearsal-check-list"
+                    }
+                }
+            },
+            "section15": {
+                "body": null,
+                "title": "Food &amp; Snacks",
+                "id": "food-and-snacks",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Nourishing the Body&hellip;",
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Respecting our Facilities",
+                        "id": "food-and-snacks-facilities"
+                    },
+                    "subsectionTwo": {
+                        "title": "Bringing a Snack for the Whole Group",
+                        "id": "snack-for-the-whole-group"
+                    }
+                }
+            },
+            "section16": {
+                "body": null,
+                "title": "Electronics",
+                "id": "electronics",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Policy",
+                        "id": "electronics-policy"
+                    },
+                    "subsectionTwo": {
+                        "title": "Doing What is Best for Your Children&hellip;",
+                        "id": "general-guidelines"
+                    }
+                }
+            },
+            "section17": {
+                "body": null,
+                "title": "Electronics at Dress Rehearsals and Performances",
+                "id": "electronics-at-dress-rehearsals-and-performances",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Porfessional Standards",
+                "subsections": {}
+            },
+            "section18": {
+                "body": null,
+                "title": "Observing Rehearsal",
+                "id": "observing-rehearsal",
+                "isLastSection": false,
+                "headline": null,
+                "btfHeadline": "Creating a Productive Space",
+                "subsections": {}
+            },
+            "section19": {
+                "body": null,
+                "title": "Supporting the Conductor&rsquo;s Work",
+                "id": "supporting-the-conductors-work",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsectionOne": {
+                        "title": "Protocol for Performance Days",
+                        "id": "protocol-for-performance-days"
+                    },
+                    "subsectionTwo": {
+                        "title": "Protocol for Rehearsal Days",
+                        "id": "protocol-for-rehearsal-days"
+                    },
+                    "subsectionThree": {
+                        "title": "The Appropriate Time",
+                        "id": "the-appropriate-time"
+                    }
+                }
+            }
+        }
+    }
+}

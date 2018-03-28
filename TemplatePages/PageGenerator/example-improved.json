@@ -1,0 +1,54 @@
+{
+    "article": {
+        "outputFile": "example-filename.html",
+        "title": "Example Article Title",
+        "headline": "This is an example article headline",
+        "id": "example-article-id",
+        "sections": {
+            "section1": {
+                "body": null,
+                "title": "Exmaple Section 1 Title",
+                "id": "section-one-id",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {
+                    "subsection-one": {
+                        "body": null,
+                        "title": "subsection-one-title",
+                        "id": "subsection-one-id"
+                    },
+                    "subsection-two": {
+                        "body": null,
+                        "title": "subsection-two-title",
+                        "id": "subsection-two-id"
+                    }
+                }
+            },
+            "section2": {
+                "body": null,
+                "title": "Section Two Title",
+                "id": "section-two-id",
+                "headline": "Section two has a headline!",
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": {}
+            },
+            "section3": {
+                "body": null,
+                "title": "Section Three Title",
+                "id": "section-three-id",
+                "isLastSection": true,
+                "headline": null,
+                "btfHeadline": null,
+                "subsections": {
+                    "subsection-one": {
+                        "body": null,
+                        "title": "subsection-one-title",
+                        "id": "subsection-one-id"
+                    }
+                }
+            }
+        }
+    }
+}

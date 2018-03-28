@@ -38,7 +38,7 @@ ejs.renderFile(
             throw new Error(onError);
         }
         else {
-            fs.writeFile(outputFile, renderedString, (err) => {
+            fs.appendFile(outputFile, renderedString, (err) => {
                 if (err) throw err;
                 console.log('The "data to append" was written to the file!');
             })
