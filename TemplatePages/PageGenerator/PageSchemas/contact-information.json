@@ -1,0 +1,54 @@
+{
+    "article": {
+        "title": "Contact Information",
+        "headline": null,
+        "id": "contact-information",
+        "sections": [
+            {
+                "title": "Useful Information",
+                "id": "useful-information",
+                "headline": null,
+                "btfHeadline": null,
+                "isLastSection": false,
+                "subsections": []
+            },
+            {
+                "title": "Whom do I contact for What?",
+                "id": "online-media",
+                "headline": null,
+                "btfHeadline": "Here is a guide to make sure your inquiries get answered in the fastest and most efficient way possible!",
+                "isLastSection": false,
+                "subsections": [
+                    {
+                        "title": "Go to <a href=\"http://www.tix.com\">www.tix.com</a> if you need to:",
+                        "id": "tix"
+                    },
+                    {
+                        "title": "Go to the Handbook if you need to:",
+                        "id": "handbook"
+                    },
+                    {
+                        "title": "Go to <a href=\"http://nationalchildrenschorus.com/myncc-page.php\">My NCC</a> if you need to:",
+                        "id": "my-ncc"
+                    },
+                    {
+                        "title": "Contact Ryan De Korte if you need to:",
+                        "id": "ryan-de-korte"
+                    },
+                    {
+                        "title": "Contact Jason Bulter if you need to:",
+                        "id": "jason-butler"
+                    },
+                    {
+                        "title": "Contact Cristina Demiany if you need to:",
+                        "id": "cristina-demiany"
+                    },
+                    {
+                        "title": "Contact the director of your child's ensemble if you need to",
+                        "id": "director"
+                    }
+                ]
+            }
+        ]
+    }
+}
