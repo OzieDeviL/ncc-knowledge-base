@@ -63,7 +63,7 @@ New text processing:
 13. look for bolds, italics, unbulleted lists, and links in original text and add appropriate tags/classes
 14. Generate sections & subsections, insert content, and autoformat.
 15. Fix broken <sup> line breaks due to vscode autoformat
-        find: (\d{1,9})[\n\r]\s*(<sup>)(st|nd|rd|th)(<\/sup>)
+        find: (\d{1,9})[\n\r]\s*<sup>(st|nd|rd|th)(<\/sup>)
         replace: $1<sup>$2</sup>
 
 
