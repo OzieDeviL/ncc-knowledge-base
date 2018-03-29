@@ -8,22 +8,23 @@ let optionsFile = process.argv[2];
 let options = require(optionsFile);
 let outputFile = process.argv[3];
 
-let article = options.article;
-if (article.sections && article.sections.length > 0) {
+if (Object.keys(options.article.sections) && Object.keys(options.article.sections).length > 0) {
     let _ejs = ejs;
-    let sections = article.sections;
-    sections.forEach(function (section) {              
-        if (section.subsections && section.subsections.length > 0) {
-            section.subsections.forEach(function (subsection) {                
+    let sections = options.article.sections;
+    Object.keys(sections).forEach(function (sectionKey) {      
+        let subsectionKeys = Object.keys(sections[sectionKey].subsections);
+        if (subsectionKeys && subsectionKeys.length > 0) {            
+            subsectionKeys.forEach(function (subsectionKey) {
+                let subsection = sections[sectionKey].subsections[subsectionKey];
                 ejs.renderFile('./subsection-template.ejs', { subsection: subsection }, function (err, renderedSubsection) {
                     if (err) throw new Error(err);
                     subsection.body = renderedSubsection;
                 });
             });
         }
-        ejs.renderFile('./section-template.ejs', { section: section }, function (err, renderedSection) {
+        ejs.renderFile('./section-template.ejs', { section: sections[sectionKey] }, function (err, renderedSection) {
             if (err) throw new Error(err);
-            section.body = renderedSection;
+            sections[sectionKey].body = renderedSection;
         });
     });
 }
