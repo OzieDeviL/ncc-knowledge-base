@@ -32,7 +32,7 @@ New text processing:
     replace: $1$2
     find: (\t)?(</[uo]l>)\n</p>
     replace $1$2
-3-4. mop up <p> tags from beginnig and end of text block
+3-4. mop up <p> tags from beginnig and end of document
 4. replace all ampersands &[\s\n], mdashes, and ndashes
 5. encode all right curlies 
     find (dangerous, assumes all straight single quotes should be right curly): '|&#39;|’
@@ -58,7 +58,7 @@ New text processing:
     replace: ($2) $4-$6 
 12. replace all caps with spans 
     find (dangerous, will pick up NCCs and other acronyms; don't forget the case matching option in vscode): (\b)([A-Z]{2,}(?:\s+[A-Z]{2,})*)(\b)
-    replace: $1<span class="ncc-transform-upper">$2</span>$3 
+    replace: $1<span class="ncc-transform-upper">$2</span>$3
     for each replace, backtrack and transform lower then capatalize.
 13. look for bolds, italics, unbulleted lists, and links in original text and add appropriate tags/classes
 14. Generate sections & subsections, insert content, and autoformat.
