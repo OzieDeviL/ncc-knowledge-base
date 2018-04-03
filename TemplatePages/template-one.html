@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 <div class="ncc-article" id="rehearsal-set-up">
     <div class="ncc-article-header">
         <h2 class="ncc-title">Template One</h2>
@@ -10,9 +11,9 @@
         <!-- VISION -->
         <div class="ncc-section" id="vision">
             <h3 class="ncc-section-title">
-                <a class="toggle-content" href="#vision-toggle" onclick="document.querySelector('#vision .ncc-chevron').classList.toggle('ncc-down');"
-                    ontouchstart="document.querySelector('#vision .ncc-chevron').classList.toggle('ncc-down');">
-                    <span class="ncc-chevron ncc-down">. </span>
+                <a class="toggle-content" href="#vision-toggle" onclick="let el = document.querySelector('#vision .ncc-chevron'); el.classList.toggle('fa-chevron-right'); el.classList.toggle('fa-chevron-down');"
+                    ontouchstart="let el = document.querySelector('#vision .ncc-chevron'); el.classList.toggle('fa-chevron-right'); el.classList.toggle('fa-chevron-down');">
+                    <i class="fa fa-chevron-right ncc-chevron"><span class="ncc-icon-spacer">.</span></i>
                     <span class="ncc-section-title-text"> Vision </span>
                 </a>
             </h3>
@@ -37,7 +38,9 @@
         <!-- PROCEDURES -->
         <div class="ncc-section" id="procedures">
             <h3 class="ncc-section-title">
-                <a class="toggle-content" href="#procedures-toggle" onclick="document.querySelector('#procedures .ncc-chevron').classList.toggle('ncc-down');"
+                <a class="toggle-content" 
+                    href="#procedures-toggle" 
+                    onclick="document.querySelector('#procedures .ncc-chevron').classList.toggle('ncc-down');"
                     ontouchstart="document.querySelector('#procedures .ncc-chevron').classList.toggle('ncc-down');">
                     <span class="ncc-chevron ncc-down">. </span>
                     <span class="ncc-section-title-text"> Procedures </span>
@@ -181,7 +184,7 @@
 
                                 <div class="ncc-captioned-image">
                                     <a href="https://dzf8vqv24eqhg.cloudfront.net/userfiles/12157/15548/ckfinder/images/NCC%20SPA%20PA%20Tue%20Rehearsal%20Photo%203.JPG?width=800&amp;height=600"
-                                        lb="orginal" rel="lightbox article-gallery" title="Conductor&rsquo;;s podium, Music Room">
+                                        lb="orginal" rel="lightbox article-gallery" title="Conductor&rsquo;s podium, Music Room">
                                         <img src="https://dzf8vqv24eqhg.cloudfront.net/userfiles/12157/15548/ckfinder/images/NCC%20SPA%20PA%20Tue%20Rehearsal%20Photo%203.JPG"
                                         /> </a>
 

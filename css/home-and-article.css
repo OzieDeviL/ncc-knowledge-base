@@ -1399,7 +1399,7 @@ input[type=search], input[type=text] {
     justify-content: flex-start;
 }
 
-.ncc-article p, .ncc-article li, .ncc-article div, .ncc-article ul, .ncc-article strong, .ncc-article a, .ncc-article hr, .ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article h4, .ncc-article h5, .ncc-article h6, .ncc-article i, .ncc-article iframe, .ncc-article span, .ncc-article img, .ncc-article table {
+.ncc-article p, .ncc-article li, .ncc-article div, .ncc-article ul, .ncc-article strong, .ncc-article a, .ncc-article hr, .ncc-article h1, .ncc-article h2, .ncc-article h3, .ncc-article h4, .ncc-article h5, .ncc-article h6, .ncc-article i:not(.fa), .ncc-article iframe, .ncc-article span, .ncc-article img, .ncc-article table {
     font-family: "Noto Sans", sans-serif;
     line-height: 1.8;
 }
@@ -1674,6 +1674,7 @@ input[type=search], input[type=text] {
 .ncc-article .ncc-section-title a {
     display: flex;
     flex-basis: 100%;
+    align-items: center;
 }
 
 .ncc-article .ncc-section-title a span {
@@ -1779,6 +1780,18 @@ sub {
     bottom: -0.25em;
 }
 
+
+.ncc-article .fa {
+    line-height: 1.8;
+    min-width: 1em;
+    font-size: .9em;
+}
+
+/* The vendor wipes away <i> tags unless there is some html inside them */
+.ncc-article i .ncc-icon-spacer {
+    display: none;
+}
+
 /* Desktops, laptops, and the article porton of landscaped tablets ----------- */
 
 @media only screen and (min-width: 1025px) {
@@ -1847,18 +1860,12 @@ sub {
         align-items: flex-start;
         flex-direction: row-reverse;
     }
-    .ncc-article .ncc-body .ncc-section .ncc-section-title .ncc-chevron {
-        top: .7em;
-    }
-    .ncc-article .ncc-body .ncc-section-title .ncc-chevron.ncc-down {
-        top: .4em;
-    }
 }
 
 /* Tablets & Smartphones (portrait and landscape)----------- */
 
 @media only screen and (max-width: 1024px) {
-    .ncc-article .ncc-section .ncc-section-title .ncc-chevron {
+    /* .ncc-article .ncc-section .ncc-section-title .ncc-chevron {
         border-style: solid;
         border-width: 0.085em 0.085em 0 0;
         display: inline-block;
@@ -1871,8 +1878,8 @@ sub {
         width: 0.6em;
         color: transparent;
         border-color: #000;
-    }
-    .ncc-article .ncc-section .ncc-chevron.ncc-right {
+    } */
+    /* .ncc-article .ncc-section .ncc-chevron.ncc-right {
         left: 0;
         transform: rotate(45deg);
     }
@@ -1883,9 +1890,9 @@ sub {
     .ncc-article .ncc-section .ncc-chevron.ncc-left {
         left: 0.25em;
         transform: rotate(-135deg);
-    }
+    } */
     .ncc-article .ncc-section-title-text {
-        margin-left: 1em;
+        margin-left: .25em;
     }
     .ncc-article .ncc-section-btf-headline {
         font-style: italic;
