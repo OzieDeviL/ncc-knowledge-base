@@ -1,11 +1,9 @@
 <!--  <%- section.title.toUpperCase() -%> Section -->
 <div class="ncc-section" id="<%= section.id _%>">
     <h3 class="ncc-section-title">
-        <a class="toggle-content" href="#<%= section.id _%>-toggle" onclick="document.querySelector('#<%= section.id _%> .ncc-chevron').classList.toggle('ncc-down');"
-            ontouchstart="document.querySelector('#<%= section.id _%> .ncc-chevron').classList.toggle('ncc-down');">
-            <span class="ncc-chevron ncc-down">
-                .
-            </span>
+        <a class="toggle-content" href="#<%= section.id _%>-toggle" 
+            ontouchstart="let el = document.querySelector('#<%= section.id %> .ncc-chevron'); el.classList.toggle('fa-chevron-right'); el.classList.toggle('fa-chevron-down');">
+            <i class="fa fa-chevron-right ncc-chevron"><span class="ncc-icon-spacer">.</span></i>
             <span class="ncc-section-title-text">
                 <%- section.title -%>
                 <% if (section.headline) { -%>   

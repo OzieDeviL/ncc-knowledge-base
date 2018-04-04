@@ -1672,8 +1672,7 @@ input[type=search], input[type=text] {
 }
 
 .ncc-article .ncc-section-title a {
-    display: flex;
-    flex-basis: 100%;
+    display: flex;    
     align-items: center;
 }
 
@@ -1865,32 +1864,6 @@ sub {
 /* Tablets & Smartphones (portrait and landscape)----------- */
 
 @media only screen and (max-width: 1024px) {
-    /* .ncc-article .ncc-section .ncc-section-title .ncc-chevron {
-        border-style: solid;
-        border-width: 0.085em 0.085em 0 0;
-        display: inline-block;
-        height: 0.6em;
-        left: 0.15em;
-        position: relative;
-        top: 0.5em;
-        transform: rotate(-45deg);
-        vertical-align: top;
-        width: 0.6em;
-        color: transparent;
-        border-color: #000;
-    } */
-    /* .ncc-article .ncc-section .ncc-chevron.ncc-right {
-        left: 0;
-        transform: rotate(45deg);
-    }
-    .ncc-article .ncc-section .ncc-chevron.ncc-down {
-        top: .2em;
-        transform: rotate(135deg);
-    }
-    .ncc-article .ncc-section .ncc-chevron.ncc-left {
-        left: 0.25em;
-        transform: rotate(-135deg);
-    } */
     .ncc-article .ncc-section-title-text {
         margin-left: .25em;
     }
