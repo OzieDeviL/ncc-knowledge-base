@@ -1,40 +1,51 @@
+<!-- to edit the homepage source code directly in proprofs, use the gear icon for the home item in the navpanel (the ncc logo) -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css" integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous">
 <div class="ncc-home">
     <div class="head ncc-home-body" id="headImage">
         <h2 class="main-heading heading1 ncc-home-heading">NCC Internal Knowledge Base</h2>
         <div class="search-kb ncc-home-search">
             <div class="input-field">
                 <input class="search-field searchbox ncc-home-search-input" id="search-header" type="search" />
-                <input class="btn-blue search-btn ncc-home-search-button" type="submit" value="Search"
+                <input class="btn-blue search-btn ncc-home-search-button" type="submit" value="Search" onclick="window.search(document.getElementById('search-header').value)"
                 />
             </div>
         </div>
-        <p class="ncc-home-document-additions">To add a document to this knowledge base, contact
-            <a href="mailto:cdemiany@ncchorus.com">Cristina Demiany</a>.</p>
+        <div class="ncc-site-actions">
+            <div class="ncc-site-action">
+                <a class="ncc-site-action-link" href="https://www.helpdocsonline.com/login">
+                    <i class="fa fa-user">
+                        <span class="ncc-icon-spacer">.</span>
+                    </i>
+                    <span>Log in</span>
+                </a>
+            </div>
+            <div class="ncc-site-action">
+                <a class="ncc-site-action-link" href="https://goo.gl/forms/c7290DPwWZzrnmP93">
+                    <i class="fa fa-user-plus">
+                        <span class="ncc-icon-spacer">.</span>
+                    </i>
+                    <span>Add a new user to this site.</span>
+                </a>
+            </div>
+            <div class="ncc-site-action">
+                <a class="ncc-site-action-link" href="mailto:dlaughlinwebdev@gmail.com">
+                    <i class="fa fa-file">
+                        <span class="ncc-icon-spacer">.</span>
+                    </i>
+                    <span>Add a new document to this site.</span>
+                </a>
+            </div>
+            <div class="ncc-site-action">
+                <a class="ncc-site-action-link" href="mailto:dlaughlinwebdev@gmail.com">
+                    <i class="fa fa-unlock-alt">
+                        <span class="ncc-icon-spacer">.</span>
+                    </i>
+                    <span>Request access to an existing document.</span>
+                </a>
+            </div>
+        </div>
     </div>
     <p class="ncc-home-website-visit">visit
         <a href="http://nationalchildrenschorus.com">nationalchildrenschorus.com</a>
     </p>
 </div>
-
-
-
-<!-- 
-
-<div class="head" id="headImage">
-    <h4 class="main-heading heading1">National Children&#39;s Chorus</h4>
-
-    <h5 class="heading2">&nbsp;</h5>
-
-    <div>Search NCC&rsquo;s Online Knowledge Base</div>
-
-    <div class="search-kb">
-        <div class="input-field">
-            <input class="search-field searchbox ncc-home-searchbox" id="search-header" type="search" />
-            <input class="btn-blue search-btn ncc-home-search-button" type="submit" value="Search" />
-        </div>
-    </div>
-
-    <div class="ncc-search-homelink">
-        <a href="http://nationalchildrenschorus.com">nationalchildrenschorus.com</a>
-    </div>
-</div> -->
