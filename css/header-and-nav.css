@@ -256,6 +256,20 @@ li.bk_wnr {
 	font-size: 2em;
 }
 
+.ncc-right-toolbar .fa
+{
+    line-height: 1.8;
+    min-width: 1em;
+	font-size: 1.5em;
+	color: white;
+}
+
+/* The vendor wipes away <i> tags unless there is some html inside them */
+.ncc-right-toolbar .ncc-icon-spacer
+{
+    display: none;
+}
+
 
 
 /* -------WARNING!!!-------- */
@@ -312,6 +326,14 @@ div.x-layout-split {
 }
 
 /* ARTICLE */
+
+/* empty search results */
+.ui-search::after {
+	content: "If you do not see the document you are looking for, you may need to contact the site admin for authorization to view it.";
+	display: inline-block;
+    margin-top: 1em;
+}
+
 
 /* This is the top node of the article area.*/
 
@@ -480,18 +502,10 @@ UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
 	border-top: 0px;
 }
 
-/* Search toolbar for smartphones */
-@media only screen and (max-width: 767px) and (min-resolution: 1dpi) {
-	body .x-toolbar-dark {
-		background-image: none !important;
-		background-color: rgb(2, 35, 85) !important;
-	}
+button.icon_userbar_switch_projects {
+	display: none;
 }
-@media only screen and (max-width: 767px) and (min-resolution: 1dpi) {
-	body #ui-header-bar .x-button {
-		background-image: none !important;
-		background-color: transparent !important;
-		border-color: transparent !important;
-		color: white !important;
-	}
+
+.x-toolbar-left-row .xtb-sep {
+	display: none;
 }
