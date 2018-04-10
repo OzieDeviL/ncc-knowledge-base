@@ -479,3 +479,19 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
 	border-top: 0px;
 }
+
+/* Search toolbar for smartphones */
+@media only screen and (max-width: 767px) and (min-resolution: 1dpi) {
+	body .x-toolbar-dark {
+		background-image: none !important;
+		background-color: rgb(2, 35, 85) !important;
+	}
+}
+@media only screen and (max-width: 767px) and (min-resolution: 1dpi) {
+	body #ui-header-bar .x-button {
+		background-image: none !important;
+		background-color: transparent !important;
+		border-color: transparent !important;
+		color: white !important;
+	}
+}
