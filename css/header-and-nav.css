@@ -390,6 +390,10 @@ body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 	background-color: rgb(246, 246, 246);
 }
 
+.ui-toc-tree-body:hover {
+	overflow-x: auto !important;
+}
+
 /* this is the main unordered list of the navpanel */
 
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
