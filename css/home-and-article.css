@@ -1371,6 +1371,10 @@ input[type=search], input[type=text] {
     max-width: 575px;
 }
 
+.ncc-home .ncc-home-search-input {
+    border-radius: 5px 0 0 5px;
+}
+
 .ncc-home .ncc-home-search-input, .ncc-home .ncc-home-search-button {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
@@ -1381,8 +1385,7 @@ input[type=search], input[type=text] {
     font-size: 1em;
     border-width: 0;
 	-webkit-appearance: none;
-    border-bottom-right-radius: 0px;
-    border-top-right-radius: 0px;
+    border-radius: 0px 5px 5px 0;
 }
 
 .ncc-home .ncc-home-document-additions {
