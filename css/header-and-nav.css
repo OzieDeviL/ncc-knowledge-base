@@ -390,10 +390,6 @@ body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 	background-color: rgb(246, 246, 246);
 }
 
-.ui-toc-tree-body:hover {
-	overflow-x: auto !important;
-}
-
 /* this is the main unordered list of the navpanel */
 
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
@@ -473,6 +469,11 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	background-size: contain;
 	background-color: #ffffff;
 	padding: 0;
+}
+
+/* this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
+.x-tree-root-ct {
+	width: 280px; /* 280px is the width set by ProProfs for the Navpanel */
 }
 
 /* the first of these selectors is the home icon in the navpanel's first list item */

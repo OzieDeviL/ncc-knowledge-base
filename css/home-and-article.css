@@ -1765,6 +1765,7 @@ input[type=search], input[type=text] {
 .ncc-article .ncc-captioned-image {
     max-width: 15em;
     margin: .6em;
+    margin-bottom: 0;
 }
 
 .ncc-article .ncc-image-row img {
@@ -1819,7 +1820,6 @@ sub {
        half as far down as the superscript moved up */
     bottom: -0.25em;
 }
-
 
 .ncc-article .fa,
 .ncc-home .fa {
