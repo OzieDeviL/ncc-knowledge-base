@@ -319,7 +319,6 @@ div.x-layout-split {
 }
 
 /* this is a child element of the bar that goes below our header in the default template */
-
 .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
 	background-color: rgb(246, 246, 246);
 	border-top: 0px;
@@ -335,8 +334,7 @@ div.x-layout-split {
 }
 
 
-/* This is the top node of the article area.*/
-
+/*remed This is the top node of the article area.*/
 #ui-main-tab {
 	border-left: 1px solid rgb(237, 235, 235);
 	border-top: 0;
@@ -344,88 +342,75 @@ div.x-layout-split {
 	z-index: 50;
 }
 
-/* this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
-
+/*remed this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body {
 	border-top: 0;
 }
 
-/* this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
-
+/*remed this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body>div.x-tab-panel-body {
 	padding-left: 0;
 }
 
-/* This is where the touch enabled mobile site's html begins */
-
+/*remed This is where the touch enabled mobile site's html begins */
 div.hiq-t-wrap>div.hiq-t {
 	padding-left: 26px;
 	padding-right: 26px;
 }
 
-/* This is the platforms self-promotional plug */
-
+/*remed This is the platforms self-promotional plug */
 .ui-poweredby-kb {
     display: none;
 }
 
 /* NAVPANEL */
 
-/* parent node of the navigation panel */
-
+/*remed parent node of the navigation panel */
 .x-tab-panel.ui-side-nav {
 	z-index: 25;
 }
 
-/* this is the grandchild of the navigation panel's top node */
-
+/*remed grandchild of the navigation panel's top node */
 body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 	border-right-width: 0px;
 	border-left-width: 0px;
 }
 
-/* this is the parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
-
+/*remed parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
 .ui-toc-tree-body {
 	background-color: rgb(246, 246, 246);
 }
 
-/* this is the main unordered list of the navpanel */
-
+/*remed main unordered list of the navpanel */
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
 }
 
-/* these are the parent nodes of all the navpanel's unordered list items */
-
+/*remed parent nodes of all the navpanel's unordered list items */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
 	border-color: rgb(237, 235, 235);
 }
 
-/* selects for all navpanel's top-level items, except the ncc graphic */
-
+/* all the navpanel's top-level items, except the ncc graphic */
 UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 	margin-left: 3.4em;
 }
 
-/* selects the text of any list item in the navpanel */
-
+/* text of any list item in the navpanel */
 .new-toc .ui-toc-tree .x-tree-node .lct-1 .x-tree-node-anchor .ltxt1, .new-toc .ui-toc-tree .x-tree-node .lct-2 .x-tree-node-anchor .ltxt2, .new-toc .ui-toc-tree .x-tree-node .lct-3 .x-tree-node-anchor .ltxt3, .new-toc .ui-toc-tree .x-tree-node .lct-4 .x-tree-node-anchor .ltxt4, .new-toc .ui-toc-tree .x-tree-node .lct-5 .x-tree-node-anchor .ltxt5{
 	font-size: 1em;
 	font-family: "Noto Sans", sans-serif;
 }
 
-/* these are the items in any sublist of a top level list item */
-
+/* items in any sublist of a top level list item */
 .new-toc .ui-toc-tree li.x-tree-node .x-tree-node-el.lct-2 {
 	padding-top: .35em;
 	padding-bottom: .35em;
 }
 
 /* selects sublists and sub-sublists in the navpanel */
-
 li.folder-node ul li.folder-node {
 	padding-right: 0;
 }
@@ -444,8 +429,7 @@ li.folder-node ul li.folder-node {
 	margin-left: 2.47em !important;
 } */
 
-/* this is the main child of the parent node of the first item in the unorder navpanel list. By default it is a home icon that links to the knowledge base homepage. */
-
+/* main child of the parent node of the first item in the unorder navpanel list. By default it is a home icon that links to the knowledge base homepage. */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
 	position: relative;
 	position: sticky;
@@ -457,8 +441,7 @@ UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
 	z-index: 1;
 }
 
-/* this is a descendant of the above. I don't know it's function for proprofs, but here we're using it in tandem with the above selector to allow the logo to scale. */
-
+/* a descendant of the above. I don't know it's function for proprofs, but here we're using it in tandem with the above selector to allow the logo to scale. */
 UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	position: absolute;
 	width: 100%;
@@ -471,29 +454,24 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	padding: 0;
 }
 
-/* this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
+/*remed this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
 .x-tree-root-ct {
 	width: 280px; /* 280px is the width set by ProProfs for the Navpanel */
 }
 
-/* the first of these selectors is the home icon in the navpanel's first list item */
-
-/* the secand is the text accompanying that icon "HOME" */
-
-/* the second of these selectors is the default text of the home */
-
-UL.x-tree-root-ct>DIV>LI:first-child div.icon-inner-ct, UL.x-tree-root-ct>DIV>LI:first-child span.ltxt1 {
+/*remed proprofs default home icon in the navpanel's first list item */
+UL.x-tree-root-ct>DIV>LI:first-child div.icon-inner-ct, 
+/*remed text accompanying that icon "HOME" */
+UL.x-tree-root-ct>DIV>LI:first-child span.ltxt1 {
 	display: none;
 }
 
-/* this prevents the ncc image from being whited out when the home list item is selected */
-
+/*remed prevents the ncc image from being whited out when the home list item is selected */
 UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 	background-color: white;
 }
 
-/* these are the child divs of the navpanel's list items */
-
+/* child divs of the navpanel's list items */
 .new-toc .ui-toc-tree li.x-tree-node:not(:first-child) .x-tree-node-el.lct-1 {
 	padding-left: 2em;
 	padding-bottom: 1.35em;
@@ -501,16 +479,13 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 	font-family: 'Noto Sans', sans-serif;
 }
 
-/* this is the navpanel item below the graphic */
-
+/*remed navpanel item below the graphic */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
-	border-top: 0px;
+	border-top: 0;
 }
 
-button.icon_userbar_switch_projects {
-	display: none;
-}
-
-.x-toolbar-left-row .xtb-sep {
+/*remed hides the proprofs icon that allows users to switch knowledge bases, which is unnecassary except for devs */
+button.icon_userbar_switch_projects,
+.x-toolbar-left-row .xtb-sep  {
 	display: none;
 }
