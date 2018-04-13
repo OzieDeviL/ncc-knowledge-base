@@ -1369,6 +1369,8 @@ input[type=search], input[type=text] {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 0;
+    padding: 7rem 0 2rem 0
 }
 
 .ncc-home .ncc-home-search {
@@ -1386,7 +1388,6 @@ input[type=search], input[type=text] {
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0 0 1px rgba(0, 0, 0, 0.08);
 }
 
-/* remed */
 .ncc-home .ncc-home-search-button {
     background-color: rgb(2, 35, 85);
     color: #fff;
@@ -1396,7 +1397,6 @@ input[type=search], input[type=text] {
     border-radius: 0px 5px 5px 0;
 }
 
-/* remed */
 .ncc-home .ncc-home-website-visit {
     justify-self: flex-end;
     margin-bottom: 3em;
@@ -1417,7 +1417,6 @@ input[type=search], input[type=text] {
     margin: 1.75rem 2em;
 }
 
-/* remed */
 .ncc-home .ncc-site-action-link {
     display: flex;
     flex-direction: column;
@@ -1427,17 +1426,14 @@ input[type=search], input[type=text] {
     color: rgb(2, 35, 85);
 }
 
-/* remed */
 .ncc-home a.ncc-site-action-link:visited {
     color: rgb(2, 35, 85);
 }
 
-/* remed */
 .ncc-home .ncc-site-actions i {
     font-size: 2.5rem;
 }
 
-/* remed review */
 .ncc-home .ncc-site-actions span {
     font-size: .75rem;
     width: 8em;
@@ -1453,14 +1449,12 @@ input[type=search], input[type=text] {
     font-size: 1rem;
 }
 
-/* remed */
 .ncc-article {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
 }
 
-/* remed review */
 .ncc-article p,
 .ncc-article li, 
 .ncc-article div, 
@@ -1483,7 +1477,6 @@ input[type=search], input[type=text] {
     line-height: 1.8;
 }
 
-/* remed */
 .ncc-article h1, 
 .ncc-article h2, 
 .ncc-article h3, 
@@ -1497,27 +1490,24 @@ input[type=search], input[type=text] {
     font-weight: normal;
 }
 
-/* remed review */
 .ncc-article h3 a, 
 .ncc-article h4 a {
     font-family: 'Alike', serif;
     font-weight: normal;
 }
 
-/* remed */
 .ncc-article a:visited, 
 .ncc-home a:visited {
     color: #609;
 }
 
-/* remed */
 .ncc-article hr {
     margin-top: 0;
     margin-bottom: 0;
 }
 
 /* HEADER */
-/* remed */
+
 .ncc-article .ncc-article-header, 
 .ncc-article .ncc-section {
     padding: 2.25rem 0;    
@@ -1525,7 +1515,6 @@ input[type=search], input[type=text] {
     margin: 0 2.75rem;
 }
 
-/* remed */
 .ncc-article .ncc-article-header {
     display: flex;
     flex-direction: column;
@@ -1533,23 +1522,19 @@ input[type=search], input[type=text] {
     align-items: flex-start;
 }
 
-/* remed */
 .ncc-article .ncc-section-headline {
     display: inline-block;
 }
 
-/* remed */
 .ncc-article .ncc-title {
     font-size: 2rem;
     line-height: 1.25;
 }
 
-/* remed */
 .ncc-article .ncc-headline {
     line-height: 1.5;
 }
 
-/* remed */
 .ncc-article .ncc-body {
     display: flex;
     flex-direction: column;
@@ -1557,23 +1542,19 @@ input[type=search], input[type=text] {
 }
 
 /* SECTION COMPONENT */
-/* remed */
 .ncc-article .ncc-section {
     display: flex;
     flex-direction: column;
 }
 
-/* remed */
 .ncc-article .toggle-content {
     color: #000;
 }
 
-/* remed */
 .ncc-article .ncc-section-title {
     display: flex;
 }
 
-/* remed */
 .ncc-article .ncc-section-title a {
     display: flex;    
     align-items: center;
@@ -1583,7 +1564,6 @@ input[type=search], input[type=text] {
     font-size: 1.5rem;
 }
 
-/* remed */
 .ncc-article .ncc-section-toggle {
     margin-top: .5rem;
 }
@@ -1596,7 +1576,6 @@ input[type=search], input[type=text] {
     margin-bottom: 2.25rem;
 }
 
-/* remed */
 .ncc-article .ncc-subsection:last-child {
     margin-bottom: 0;
 }
@@ -1619,7 +1598,7 @@ input[type=search], input[type=text] {
     align-items: flex-start;
 }
 
-/* remed TYPICAL SECTION & SUBSECTION ELEMENTS */
+/*  TYPICAL SECTION & SUBSECTION ELEMENTS */
 .ncc-article .ncc-section p,
 .ncc-article .ncc-section li,
 .ncc-article table,
@@ -1637,12 +1616,10 @@ input[type=search], input[type=text] {
     margin-top: 0;
 }
 
-/* remed */
 .ncc-article ol {
     margin-left: 0;
 }
 
-/* remed */
 .ncc-article p + p,
 .ncc-article p + .ncc-p-img-side-by-side,
 .ncc-article .ncc-p-img-side-by-side + .ncc-p-img-side-by-side, {
@@ -1819,7 +1796,6 @@ input[type=search], input[type=text] {
 .ncc-article .ncc-image-row img {
     object-fit: cover;
 }
-/* remed */
 .ncc-article .ncc-captioned-image p {
     font-size: .8125rem;
     margin-bottom: .2rem;
