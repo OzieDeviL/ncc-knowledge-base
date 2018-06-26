@@ -201,7 +201,7 @@ li.bk_wnr {
 /* -----HEADER---- */
 
 .ncc-header {
-	height: 54px;
+	height: 3.25rem;
 	background-color: rgb(2, 35, 85);
 	color: white;	
 	display: flex;
@@ -212,12 +212,12 @@ li.bk_wnr {
 }
 
 .ncc-header .ncc-navpanel-match {
-	flex-basis: 280px;
+	flex-basis: 17.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 54px;
+	height: 3.25rem;
 }
 
 .ncc-header .ncc-search-tool {
@@ -238,19 +238,21 @@ li.bk_wnr {
 	flex-basis: 80%;
 	padding: 0 .7em;
 	font-family: "Noto Sans", sans-serif;
-	font-size: 1.05em;
+	font-size: .95rem;
 }
 
 .ncc-search-tool .ncc-search-button {	
 	padding: 2px;
-	font-size: 1.4em;
+	font-size: 1.25rem;
 }
+
 
 .ncc-header .ncc-right-toolbar {
 	padding-right: 1.1em;
 	margin-top: .9em;
 }
 
+/* this next selector may be deletable, didn't find a reference to .ncc-user-button on teh home page. If not, font-size should be redone in pixel equivalent rem units*/
 .ncc-right-toolbar .ncc-user-button {	
 	padding: 2px;
 	font-size: 2em;
@@ -260,7 +262,7 @@ li.bk_wnr {
 {
     line-height: 1.8;
     min-width: 1em;
-	font-size: 1.5em;
+	font-size: 1rem;
 	color: white;
 }
 
