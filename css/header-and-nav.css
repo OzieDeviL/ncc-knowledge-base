@@ -276,7 +276,7 @@ li.bk_wnr {
 
 /* -------WARNING!!!-------- */
 
-/* everything below is subject to instabilities if proprofs changes the underlying html */
+/* everything below is subject to instabilities if Proprofs changes the underlying html */
 
 /* TOP LEVEL SELECTORS */
 
@@ -287,13 +287,11 @@ li.bk_wnr {
 }
 
 /* this is the global search box */
-
 .x-toolbar-right-row .x-form-field-wrap input.ui-se-txt {
 	display: none;
 }
 
-/* this is user-adjustable splitter between article and navpanel*/
-
+/* this is user-adjustable splitter between article and navpanel */
 div.x-layout-split {
 	width: 0px;
 }
@@ -310,17 +308,14 @@ div.x-layout-split {
 } */
 
 /* this is the sibling node to the ProProfs generated header where the custom header lives  */
-
 .ui-site-header .x-panel-body-noheader.custom-header-body {
-
 }
 
 /* this is the layout bar that proprofs provides automatically */
 .x-panel-noborder .x-panel-bbar-noborder {
-
 }
 
-/* this is a child element of the bar that goes below our header in the default template */
+/* this is a child element of the Proprofs toolbar that goes below our header in the default template */
 .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
 	background-color: rgb(246, 246, 246);
 	border-top: 0px;
@@ -336,7 +331,7 @@ div.x-layout-split {
 }
 
 
-/*remed This is the top node of the article area.*/
+/* This is the top node of the article area.*/
 #ui-main-tab {
 	border-left: 1px solid rgb(237, 235, 235);
 	border-top: 0;
@@ -344,57 +339,57 @@ div.x-layout-split {
 	z-index: 50;
 }
 
-/*remed this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
+/*this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body {
 	border-top: 0;
 }
 
-/*remed this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
+/*r this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body>div.x-tab-panel-body {
 	padding-left: 0;
 }
 
-/*remed This is where the touch enabled mobile site's html begins */
+/* This is where the touch enabled mobile site's html begins */
 div.hiq-t-wrap>div.hiq-t {
 	padding-left: 26px;
 	padding-right: 26px;
 }
 
-/*remed This is the platforms self-promotional plug */
+/* This is the vendor's self-promotional plug */
 .ui-poweredby-kb {
     display: none;
 }
 
 /* NAVPANEL */
 
-/*remed parent node of the navigation panel */
+/* parent node of the navigation panel */
 .x-tab-panel.ui-side-nav {
 	z-index: 25;
 }
 
-/*remed grandchild of the navigation panel's top node */
+/* grandchild of the navigation panel's top node */
 body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 	border-right-width: 0px;
 	border-left-width: 0px;
 }
 
-/*remed parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
+/* parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
 .ui-toc-tree-body {
 	background-color: rgb(246, 246, 246);
 }
 
-/*remed main unordered list of the navpanel */
+/* main unordered list of the navpanel */
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
 }
 
-/*remed parent nodes of all the navpanel's unordered list items */
+/* parent nodes of all the navpanel's unordered list items */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
 	border-color: rgb(237, 235, 235);
 }
-
+/* UNREMED */
 /* all the navpanel's top-level items, except the ncc graphic */
 UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
 	margin-left: 3.4em;
