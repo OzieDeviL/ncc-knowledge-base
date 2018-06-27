@@ -442,7 +442,7 @@ UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:first-child {
 }
 
 /* a descendant of the above. I don't know it's function for proprofs, but here we're using it in tandem with the above selector to allow the logo to scale. */
-UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
+UL.x-tree-root-ct > DIV > LI:first-child .x-tree-node-el.lct-1 {
 	position: absolute;
 	width: 100%;
 	height: 100%;
