@@ -201,7 +201,7 @@ li.bk_wnr {
 /* -----HEADER---- */
 
 .ncc-header {
-	height: 54px;
+	height: 3.25rem;
 	background-color: rgb(2, 35, 85);
 	color: white;	
 	display: flex;
@@ -212,12 +212,12 @@ li.bk_wnr {
 }
 
 .ncc-header .ncc-navpanel-match {
-	flex-basis: 280px;
+	flex-basis: 17.5rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 54px;
+	height: 3.25rem;
 }
 
 .ncc-header .ncc-search-tool {
@@ -238,19 +238,21 @@ li.bk_wnr {
 	flex-basis: 80%;
 	padding: 0 .7em;
 	font-family: "Noto Sans", sans-serif;
-	font-size: 1.05em;
+	font-size: .95rem;
 }
 
 .ncc-search-tool .ncc-search-button {	
 	padding: 2px;
-	font-size: 1.4em;
+	font-size: 1.25rem;
 }
+
 
 .ncc-header .ncc-right-toolbar {
 	padding-right: 1.1em;
 	margin-top: .9em;
 }
 
+/* this next selector may be deletable, didn't find a reference to .ncc-user-button on teh home page. If not, font-size should be redone in pixel equivalent rem units*/
 .ncc-right-toolbar .ncc-user-button {	
 	padding: 2px;
 	font-size: 2em;
@@ -260,7 +262,7 @@ li.bk_wnr {
 {
     line-height: 1.8;
     min-width: 1em;
-	font-size: 1.5em;
+	font-size: 1rem;
 	color: white;
 }
 
@@ -274,7 +276,7 @@ li.bk_wnr {
 
 /* -------WARNING!!!-------- */
 
-/* everything below is subject to instabilities if proprofs changes the underlying html */
+/* everything below is subject to instabilities if Proprofs changes the underlying html */
 
 /* TOP LEVEL SELECTORS */
 
@@ -285,13 +287,11 @@ li.bk_wnr {
 }
 
 /* this is the global search box */
-
 .x-toolbar-right-row .x-form-field-wrap input.ui-se-txt {
 	display: none;
 }
 
-/* this is user-adjustable splitter between article and navpanel*/
-
+/* this is user-adjustable splitter between article and navpanel */
 div.x-layout-split {
 	width: 0px;
 }
@@ -308,17 +308,14 @@ div.x-layout-split {
 } */
 
 /* this is the sibling node to the ProProfs generated header where the custom header lives  */
-
 .ui-site-header .x-panel-body-noheader.custom-header-body {
-
 }
 
 /* this is the layout bar that proprofs provides automatically */
 .x-panel-noborder .x-panel-bbar-noborder {
-
 }
 
-/* this is a child element of the bar that goes below our header in the default template */
+/* this is a child element of the Proprofs toolbar that goes below our header in the default template */
 .x-panel-noborder .x-panel-bbar-noborder .x-toolbar {
 	background-color: rgb(246, 246, 246);
 	border-top: 0px;
@@ -334,7 +331,7 @@ div.x-layout-split {
 }
 
 
-/*remed This is the top node of the article area.*/
+/* This is the top node of the article area.*/
 #ui-main-tab {
 	border-left: 1px solid rgb(237, 235, 235);
 	border-top: 0;
@@ -342,65 +339,65 @@ div.x-layout-split {
 	z-index: 50;
 }
 
-/*remed this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
+/*this is a child of the parent node of the article area. It covers the same area as the parent By default, it comes with a border.*/
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body {
 	border-top: 0;
 }
 
-/*remed this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
+/*r this is the child of the above selector #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body and grandchild of #ui-main-tab */
 #ui-main-tab>div.x-tab-panel-bwrap.x-tab-panel-body>div.x-tab-panel-body {
 	padding-left: 0;
 }
 
-/*remed This is where the touch enabled mobile site's html begins */
+/* This is where the touch enabled mobile site's html begins */
 div.hiq-t-wrap>div.hiq-t {
 	padding-left: 26px;
 	padding-right: 26px;
 }
 
-/*remed This is the platforms self-promotional plug */
+/* This is the vendor's self-promotional plug */
 .ui-poweredby-kb {
     display: none;
 }
 
 /* NAVPANEL */
 
-/*remed parent node of the navigation panel */
+/* parent node of the navigation panel */
 .x-tab-panel.ui-side-nav {
 	z-index: 25;
 }
 
-/*remed grandchild of the navigation panel's top node */
+/* grandchild of the navigation panel's top node */
 body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 	border-right-width: 0px;
 	border-left-width: 0px;
 }
 
-/*remed parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
+/* parent node of the navpanel ul. It is the place where the overlay property gets changed by ProProfs' javascript, resulting in that resizing bug  */
 .ui-toc-tree-body {
 	background-color: rgb(246, 246, 246);
 }
 
-/*remed main unordered list of the navpanel */
+/* main unordered list of the navpanel */
 .new-toc .ui-toc-tree ul.x-tree-root-ct {
 	padding-left: 0;
 	padding-right: 0;
 	padding-top: 0;
 }
 
-/*remed parent nodes of all the navpanel's unordered list items */
+/* parent nodes of all the navpanel's unordered list items */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
 	border-color: rgb(237, 235, 235);
 }
 
 /* all the navpanel's top-level items, except the ncc graphic */
-UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
-	margin-left: 3.4em;
+UL.x-tree-root-ct > div > li.x-tree-node:not(:first-child) {
+	margin-left: 2.25rem;
 }
 
 /* text of any list item in the navpanel */
 .new-toc .ui-toc-tree .x-tree-node .lct-1 .x-tree-node-anchor .ltxt1, .new-toc .ui-toc-tree .x-tree-node .lct-2 .x-tree-node-anchor .ltxt2, .new-toc .ui-toc-tree .x-tree-node .lct-3 .x-tree-node-anchor .ltxt3, .new-toc .ui-toc-tree .x-tree-node .lct-4 .x-tree-node-anchor .ltxt4, .new-toc .ui-toc-tree .x-tree-node .lct-5 .x-tree-node-anchor .ltxt5{
-	font-size: 1em;
+	font-size: .75rem;
 	font-family: "Noto Sans", sans-serif;
 }
 
@@ -454,20 +451,20 @@ UL.x-tree-root-ct > DIV > LI:first-child .x-tree-node-el.lct-1 {
 	padding: 0;
 }
 
-/*remed this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
+/* this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
 .x-tree-root-ct {
 	width: 280px; /* 280px is the width set by ProProfs for the Navpanel */
 }
 
-/*remed proprofs default home icon in the navpanel's first list item */
-UL.x-tree-root-ct>DIV>LI:first-child div.icon-inner-ct, 
-/*remed text accompanying that icon "HOME" */
-UL.x-tree-root-ct>DIV>LI:first-child span.ltxt1 {
+/* proprofs default home icon in the navpanel's first list item */
+UL.x-tree-root-ct > DIV > LI:first-child div.icon-inner-ct, 
+/* text accompanying that icon "HOME" */
+UL.x-tree-root-ct > DIV > LI:first-child span.ltxt1 {
 	display: none;
 }
 
-/*remed prevents the ncc image from being whited out when the home list item is selected */
-UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
+/* prevents the ncc image from being whited out when the home list item is selected */
+UL.x-tree-root-ct >DIV > LI:first-child .x-tree-selected {
 	background-color: white;
 }
 
@@ -479,12 +476,12 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 	font-family: 'Noto Sans', sans-serif;
 }
 
-/*remed navpanel item below the graphic */
+/* navpanel item below the graphic */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
 	border-top: 0;
 }
 
-/*remed hides the proprofs icon that allows users to switch knowledge bases, which is unnecassary except for devs */
+/* hides the proprofs icon that allows users to switch knowledge bases, which is unnecassary except for devs */
 button.icon_userbar_switch_projects,
 .x-toolbar-left-row .xtb-sep  {
 	display: none;
