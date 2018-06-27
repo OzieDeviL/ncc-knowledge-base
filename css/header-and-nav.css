@@ -389,15 +389,15 @@ body>div.x-tab-panel>div.x-tab-panel-bwrap>div.x-tab-panel-body {
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node {
 	border-color: rgb(237, 235, 235);
 }
-/* UNREMED */
+
 /* all the navpanel's top-level items, except the ncc graphic */
-UL.x-tree-root-ct>div>li.x-tree-node:not(:first-child) {
-	margin-left: 3.4em;
+UL.x-tree-root-ct > div > li.x-tree-node:not(:first-child) {
+	margin-left: 2.25rem;
 }
 
 /* text of any list item in the navpanel */
 .new-toc .ui-toc-tree .x-tree-node .lct-1 .x-tree-node-anchor .ltxt1, .new-toc .ui-toc-tree .x-tree-node .lct-2 .x-tree-node-anchor .ltxt2, .new-toc .ui-toc-tree .x-tree-node .lct-3 .x-tree-node-anchor .ltxt3, .new-toc .ui-toc-tree .x-tree-node .lct-4 .x-tree-node-anchor .ltxt4, .new-toc .ui-toc-tree .x-tree-node .lct-5 .x-tree-node-anchor .ltxt5{
-	font-size: 1em;
+	font-size: .75rem;
 	font-family: "Noto Sans", sans-serif;
 }
 
@@ -451,20 +451,20 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-node-el.lct-1 {
 	padding: 0;
 }
 
-/*remed this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
+/* this keeps the navpanel from resizing if hovering creates a scrollbar. Doing so caused an annoying resizing of the home image */
 .x-tree-root-ct {
 	width: 280px; /* 280px is the width set by ProProfs for the Navpanel */
 }
 
-/*remed proprofs default home icon in the navpanel's first list item */
-UL.x-tree-root-ct>DIV>LI:first-child div.icon-inner-ct, 
-/*remed text accompanying that icon "HOME" */
-UL.x-tree-root-ct>DIV>LI:first-child span.ltxt1 {
+/* proprofs default home icon in the navpanel's first list item */
+UL.x-tree-root-ct > DIV > LI:first-child div.icon-inner-ct, 
+/* text accompanying that icon "HOME" */
+UL.x-tree-root-ct > DIV > LI:first-child span.ltxt1 {
 	display: none;
 }
 
-/*remed prevents the ncc image from being whited out when the home list item is selected */
-UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
+/* prevents the ncc image from being whited out when the home list item is selected */
+UL.x-tree-root-ct >DIV > LI:first-child .x-tree-selected {
 	background-color: white;
 }
 
@@ -476,12 +476,12 @@ UL.x-tree-root-ct>DIV>LI:first-child .x-tree-selected {
 	font-family: 'Noto Sans', sans-serif;
 }
 
-/*remed navpanel item below the graphic */
+/* navpanel item below the graphic */
 UL.x-tree-root-ct>DIV.x-tree-root-node>li.x-tree-node:nth-child(2) {
 	border-top: 0;
 }
 
-/*remed hides the proprofs icon that allows users to switch knowledge bases, which is unnecassary except for devs */
+/* hides the proprofs icon that allows users to switch knowledge bases, which is unnecassary except for devs */
 button.icon_userbar_switch_projects,
 .x-toolbar-left-row .xtb-sep  {
 	display: none;
